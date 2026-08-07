@@ -4,26 +4,27 @@
 <meta charset="UTF-8">
 <meta name="robots" content="noindex, nofollow">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Taninomaru — Sport Fishing Charter in Wakayama, Japan | Book Online</title>
-<meta name="description" content="Family-run fishing charter on the Kii Channel, Wakayama. 90 min from Kansai Airport. Casting, jigging, night squid festival. English booking, gear rental, beginners welcome. From ¥12,000.">
+<title>谷野丸 Taninomaru — Fishing Charter in Wakayama, Japan | Book Online</title>
+<meta name="description" content="谷野丸 Taninomaru — family-run fishing charter on the Kii Channel, Wakayama. 90 min from Kansai Airport. Casting, jigging, night squid. English booking, gear rental, beginners welcome. From ¥12,000.">
 <link rel="icon" href="assets/mascot-squid.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Manrope:wght@400;500;700;800&family=Noto+Sans+JP:wght@400;500;700;900&family=Noto+Serif+JP:wght@600;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Manrope:wght@400;500;700;800&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
 <style>
 :root{
-  --paper:#f6f1e6;      /* 和紙クリーム */
+  --paper:#f6f1e6;
   --paper-2:#efe7d5;
-  --ink:#182432;        /* 墨藍 */
+  --ink:#182432;
   --indigo:#1d3a5f;
   --deep:#0e1c2c;
-  --red:#d8402f;        /* 朱 */
+  --red:#d8402f;
   --red-dark:#b02f21;
   --gold:#e2a63d;
+  --green:#1f9d55;
   --white:#fffdf8;
   --line:rgba(24,36,50,.14);
   --shadow:0 14px 40px rgba(14,28,44,.16);
-  --r:18px;
+  --r:16px;
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -39,239 +40,281 @@ body.lang-ja .en{display:none}
 body.lang-ja .ja.block, .en.block{display:block}
 body.lang-ja .en.block{display:none}
 body.lang-ja{font-family:'Noto Sans JP','Manrope',sans-serif}
-
-.disp{font-family:'Archivo Black','Noto Sans JP',sans-serif;letter-spacing:.01em;line-height:1.08;text-transform:uppercase}
-body.lang-ja .disp{font-family:'Noto Sans JP',sans-serif;font-weight:900;text-transform:none;letter-spacing:.02em;line-height:1.25}
-.serifjp{font-family:'Noto Serif JP',serif;font-weight:900}
+.disp{font-family:'Archivo Black','Noto Sans JP',sans-serif;letter-spacing:.01em;line-height:1.1}
+body.lang-ja .disp{font-family:'Noto Sans JP',sans-serif;font-weight:900;letter-spacing:.02em;line-height:1.3}
 
 .wrap{max-width:1180px;margin:0 auto;padding:0 22px}
-section{position:relative}
 
-/* ===== notice bar ===== */
-.notice{background:var(--deep);color:#cfe0f2;font-size:.78rem;letter-spacing:.08em;text-align:center;padding:8px 14px}
+/* ===== notice ===== */
+.notice{background:var(--deep);color:#cfe0f2;font-size:.76rem;letter-spacing:.06em;text-align:center;padding:7px 14px}
 .notice b{color:var(--gold);font-weight:700}
 
 /* ===== header ===== */
-header{position:sticky;top:0;z-index:200;background:rgba(246,241,230,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);transition:box-shadow .3s}
+header{position:sticky;top:0;z-index:200;background:rgba(246,241,230,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);transition:box-shadow .3s}
 header.scrolled{box-shadow:0 6px 24px rgba(14,28,44,.10)}
-.nav{display:flex;align-items:center;gap:26px;padding:12px 0}
+.nav{display:flex;align-items:center;gap:18px;padding:11px 0}
 .brand{display:flex;align-items:center;gap:11px;margin-right:auto}
-.brand img{width:46px;height:46px;border-radius:50%;box-shadow:0 3px 10px rgba(14,28,44,.25)}
-.brand .bt{font-family:'Archivo Black',sans-serif;font-size:1.12rem;letter-spacing:.04em;line-height:1}
-.brand .bs{font-size:.63rem;letter-spacing:.34em;color:var(--red);font-weight:800;text-transform:uppercase}
-.nav-links{display:flex;gap:22px;font-size:.86rem;font-weight:700}
+.brand img{width:44px;height:44px;border-radius:50%;box-shadow:0 3px 10px rgba(14,28,44,.25)}
+.brand .bt{font-weight:900;font-size:1.28rem;line-height:1;font-family:'Noto Sans JP',sans-serif;letter-spacing:.06em}
+.brand .bs{font-size:.6rem;letter-spacing:.26em;color:var(--red);font-weight:800;text-transform:uppercase;font-family:'Manrope',sans-serif}
+.nav-links{display:flex;gap:20px;font-size:.85rem;font-weight:700}
 .nav-links a{opacity:.82;transition:.2s;white-space:nowrap}
 .nav-links a:hover{opacity:1;color:var(--red)}
-.lang-btn{border:1.5px solid var(--ink);background:transparent;border-radius:99px;padding:7px 15px;font-size:.78rem;font-weight:800;letter-spacing:.04em;transition:.2s}
-.lang-btn:hover{background:var(--ink);color:var(--paper)}
-.cta-s{background:var(--red);color:#fff;border:none;border-radius:99px;padding:11px 22px;font-weight:800;font-size:.86rem;letter-spacing:.03em;box-shadow:0 6px 18px rgba(216,64,47,.35);transition:.2s}
+.icon-links{display:flex;gap:8px;align-items:center}
+.ic{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;font-size:1.05rem;transition:.2s;position:relative;color:#fff;border:none}
+.ic:hover{transform:translateY(-2px)}
+.ic.ig{background:radial-gradient(circle at 30% 110%,#fdf497 0%,#fd5949 45%,#d6249f 60%,#285AEB 90%)}
+.ic.tt{background:#101010}
+.ic.tel{background:var(--indigo)}
+.ic.wa{background:#25d366;opacity:.55;cursor:default}
+.ic .soon{position:absolute;top:-8px;right:-13px;background:var(--gold);color:var(--deep);font-size:.5rem;font-weight:800;border-radius:6px;padding:1px 5px;letter-spacing:.03em;white-space:nowrap}
+.seg{display:flex;border:1.5px solid var(--ink);border-radius:99px;overflow:hidden;flex:0 0 auto;background:var(--white)}
+.seg button{border:none;background:transparent;padding:8px 14px;font-weight:800;font-size:.75rem;letter-spacing:.03em;color:var(--ink);transition:.2s}
+.seg button.active{background:var(--ink);color:var(--paper)}
+.cta-s{background:var(--red);color:#fff;border:none;border-radius:99px;padding:11px 22px;font-weight:800;font-size:.85rem;box-shadow:0 6px 18px rgba(216,64,47,.35);transition:.2s;white-space:nowrap}
 .cta-s:hover{background:var(--red-dark);transform:translateY(-1px)}
-@media(max-width:900px){.nav-links{display:none}}
-
-/* ===== hero ===== */
-.hero{background:var(--deep);color:#fff;overflow:hidden}
-.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;min-height:640px}
-.hero-copy{display:flex;flex-direction:column;justify-content:center;padding:70px 5vw 70px calc(max((100vw - 1180px)/2, 22px));position:relative;z-index:2}
-.hero-kicker{display:inline-flex;align-items:center;gap:10px;color:var(--gold);font-weight:800;font-size:.8rem;letter-spacing:.28em;text-transform:uppercase;margin-bottom:20px}
-.hero-kicker::before{content:"";width:34px;height:2px;background:var(--gold)}
-.hero h1{font-size:clamp(2.5rem,5.2vw,4.3rem);color:#fff;margin-bottom:8px}
-.hero h1 .accent{color:var(--red);-webkit-text-stroke:0;display:inline-block}
-.hero h1 .stroke{color:transparent;-webkit-text-stroke:2px rgba(255,255,255,.85)}
-body.lang-ja .hero h1 .stroke{color:#fff;-webkit-text-stroke:0}
-.hero-sub{color:#b9c9dc;font-size:1.02rem;max-width:520px;margin:18px 0 30px}
-.hero-ctas{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:34px}
-.cta-main{background:var(--red);color:#fff;border:none;border-radius:14px;padding:17px 34px;font-size:1rem;font-weight:800;letter-spacing:.02em;box-shadow:0 10px 30px rgba(216,64,47,.45);transition:.22s;display:inline-flex;align-items:center;gap:10px}
-.cta-main:hover{background:var(--red-dark);transform:translateY(-2px)}
-.cta-ghost{background:transparent;color:#fff;border:1.6px solid rgba(255,255,255,.5);border-radius:14px;padding:17px 30px;font-size:1rem;font-weight:700;transition:.22s}
-.cta-ghost:hover{border-color:#fff;background:rgba(255,255,255,.08)}
-.hero-chips{display:flex;flex-wrap:wrap;gap:9px;max-width:560px}
-.chip{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.16);color:#dce8f4;border-radius:99px;padding:7px 15px;font-size:.76rem;font-weight:700;letter-spacing:.02em}
-.chip b{color:var(--gold)}
-.hero-visual{position:relative;min-height:420px}
-.hero-visual img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
-.hero-visual::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--deep) 0%,rgba(14,28,44,.25) 30%,rgba(14,28,44,0) 60%);z-index:1}
-.hero-visual::after{content:"";position:absolute;left:0;right:0;bottom:0;height:120px;background:linear-gradient(0deg,var(--deep),transparent);z-index:1}
-.hero-tag{position:absolute;right:26px;bottom:26px;z-index:2;background:rgba(14,28,44,.78);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.18);border-radius:12px;padding:10px 16px;font-size:.75rem;color:#cfe0f2;letter-spacing:.05em}
-.hero-tag b{color:var(--gold)}
+@media(max-width:1120px){.nav-links{display:none}}
 @media(max-width:900px){
-  .hero-grid{grid-template-columns:1fr;min-height:0}
-  .hero-copy{padding:56px 22px 40px}
-  .hero-visual{min-height:300px;order:-1}
-  .hero-visual::before{background:linear-gradient(0deg,var(--deep) 4%,rgba(14,28,44,0) 55%)}
+  .cta-s{display:none}
+  .nav{flex-wrap:wrap;gap:10px;row-gap:8px;padding:10px 0}
+  .ic{width:34px;height:34px;font-size:.95rem}
 }
 
-/* ===== flow strip ===== */
-.flow{background:var(--red);color:#fff;padding:26px 0}
-.flow-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
-.flow-step{display:flex;align-items:center;gap:12px;justify-content:center;padding:8px 6px}
-.flow-num{font-family:'Archivo Black',sans-serif;font-size:1.6rem;opacity:.55;line-height:1}
-.flow-step p{font-size:.84rem;font-weight:800;letter-spacing:.03em;line-height:1.3}
-.flow-step span.sub2{display:block;font-size:.68rem;font-weight:500;opacity:.85}
-@media(max-width:800px){.flow-grid{grid-template-columns:repeat(2,1fr);gap:14px}}
+/* ===== hero collage ===== */
+.hero{padding:26px 0 0}
+.collage{display:grid;grid-template-columns:2fr 1fr 1fr;grid-template-rows:200px 200px;gap:10px;border-radius:20px;overflow:hidden}
+.collage .c{position:relative;overflow:hidden}
+.collage .c img{width:100%;height:100%;object-fit:cover;transition:.4s}
+.collage .c:hover img{transform:scale(1.05)}
+.collage .c1{grid-row:span 2}
+.collage .badge-photos{position:absolute;right:12px;bottom:12px;background:rgba(14,28,44,.8);color:#fff;font-size:.74rem;font-weight:700;border-radius:9px;padding:7px 13px;backdrop-filter:blur(4px)}
+.title-row{display:flex;align-items:flex-start;gap:18px;flex-wrap:wrap;padding:24px 0 8px}
+.title-row h1{font-size:clamp(1.5rem,3vw,2.15rem);line-height:1.2}
+.title-row .sub{color:#4c5b6c;font-size:.92rem;margin-top:6px}
+.rate-line{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:9px;font-size:.85rem}
+.stars{color:var(--gold);letter-spacing:2px;font-size:.95rem}
+.rate-line b{font-size:.95rem}
+.pill{background:var(--white);border:1px solid var(--line);border-radius:99px;padding:4px 12px;font-size:.72rem;font-weight:700;color:#4c5b6c}
+.pill.hot{background:#fdeeec;border-color:rgba(216,64,47,.3);color:var(--red)}
+@media(max-width:760px){.collage{grid-template-columns:1fr 1fr;grid-template-rows:170px 110px}.collage .c4,.collage .c5{display:none}.collage .c1{grid-row:span 1;grid-column:span 2}}
 
-/* ===== section headers ===== */
-.sec{padding:92px 0}
-.sec-head{margin-bottom:48px;max-width:720px}
-.kicker{color:var(--red);font-weight:800;font-size:.78rem;letter-spacing:.3em;text-transform:uppercase;display:inline-flex;align-items:center;gap:10px;margin-bottom:14px}
-.kicker::before{content:"";width:26px;height:2px;background:var(--red)}
-.sec h2{font-size:clamp(1.9rem,3.4vw,2.7rem)}
-.sec-head p{margin-top:14px;color:#4c5b6c;font-size:.98rem}
+/* ===== trust strip ===== */
+.trust{display:flex;gap:10px;flex-wrap:wrap;padding:16px 0 8px}
+.trust span{display:inline-flex;align-items:center;gap:7px;background:var(--white);border:1px solid var(--line);border-radius:12px;padding:9px 14px;font-size:.78rem;font-weight:700}
+.trust .tick{color:var(--green);font-weight:900}
 
-/* ===== why ===== */
-.why{background:var(--paper)}
-.why-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
-.why-photos{position:relative;padding-bottom:40px}
-.why-photos .p1{border-radius:var(--r);box-shadow:var(--shadow);width:88%}
-.why-photos .p2{position:absolute;right:0;bottom:0;width:46%;border-radius:14px;box-shadow:var(--shadow);border:5px solid var(--paper)}
-.why-photos .mascot{position:absolute;left:-14px;top:-24px;width:92px;filter:drop-shadow(0 6px 14px rgba(14,28,44,.3));transform:rotate(-8deg)}
-.why-list{display:flex;flex-direction:column;gap:22px;margin-top:34px}
-.why-item{display:flex;gap:16px;align-items:flex-start}
-.why-ico{flex:0 0 46px;height:46px;border-radius:13px;background:var(--indigo);color:#fff;display:grid;place-items:center;font-size:1.25rem}
-.why-item h3{font-size:1.02rem;font-weight:800;margin-bottom:3px}
-.why-item p{font-size:.88rem;color:#4c5b6c}
-.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:64px}
-.stat{background:var(--white);border:1px solid var(--line);border-radius:var(--r);padding:22px 14px;text-align:center;box-shadow:0 4px 14px rgba(14,28,44,.05)}
-.stat .n{font-family:'Archivo Black',sans-serif;font-size:1.9rem;color:var(--red);line-height:1.1}
-.stat .l{font-size:.72rem;font-weight:700;letter-spacing:.06em;color:#4c5b6c;text-transform:uppercase;margin-top:5px}
-@media(max-width:900px){.why-grid{grid-template-columns:1fr;gap:40px}.stats{grid-template-columns:repeat(2,1fr)}}
+/* ===== main grid ===== */
+.main-grid{display:grid;grid-template-columns:minmax(0,1fr) 384px;gap:34px;align-items:start;padding:26px 0 60px}
+.col-book{order:2;position:sticky;top:86px}
+.col-main{order:1;min-width:0}
+@media(max-width:980px){
+  .main-grid{display:block}
+  .col-book{position:static;margin-bottom:36px}
+}
 
-/* ===== trips ===== */
-.trips{background:var(--deep);color:#fff}
-.trips .sec-head p{color:#9fb2c8}
-.trips h2{color:#fff}
-.trip-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-.trip{background:#15283e;border:1px solid rgba(255,255,255,.09);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column;transition:.25s}
-.trip:hover{transform:translateY(-5px);box-shadow:0 18px 44px rgba(0,0,0,.4);border-color:rgba(226,166,61,.45)}
-.trip-img{position:relative;height:210px;overflow:hidden}
-.trip-img img{width:100%;height:100%;object-fit:cover;transition:.5s}
-.trip:hover .trip-img img{transform:scale(1.06)}
-.trip-season{position:absolute;top:14px;left:14px;background:var(--gold);color:var(--deep);font-size:.68rem;font-weight:800;letter-spacing:.06em;border-radius:99px;padding:5px 12px;text-transform:uppercase}
-.trip-body{padding:22px 22px 24px;display:flex;flex-direction:column;flex:1}
-.trip-body h3{font-size:1.16rem;font-weight:800;line-height:1.3;margin-bottom:7px}
-.trip-body .desc{font-size:.85rem;color:#9fb2c8;flex:1}
-.trip-meta{display:flex;flex-wrap:wrap;gap:7px;margin:15px 0}
-.tm{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:8px;font-size:.7rem;font-weight:700;padding:4px 10px;color:#cdd9e6}
-.trip-foot{display:flex;align-items:center;justify-content:space-between;border-top:1px solid rgba(255,255,255,.1);padding-top:16px}
-.price{font-family:'Archivo Black',sans-serif;font-size:1.35rem;color:var(--gold)}
-.price span{font-size:.68rem;font-family:'Manrope',sans-serif;font-weight:600;color:#9fb2c8;display:block;letter-spacing:.04em}
-.trip-book{background:var(--red);border:none;color:#fff;border-radius:10px;padding:10px 18px;font-weight:800;font-size:.8rem;transition:.2s}
+/* ===== booking widget ===== */
+.bookw{background:var(--white);border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow);padding:24px;scroll-margin-top:96px}
+.bookw .from{display:flex;align-items:baseline;gap:8px;margin-bottom:2px}
+.bookw .from .n{font-family:'Archivo Black',sans-serif;font-size:1.55rem;color:var(--red)}
+.bookw .from .l{font-size:.78rem;color:#4c5b6c;font-weight:600}
+.bookw .rsm{font-size:.76rem;color:#4c5b6c;margin-bottom:16px}
+.bookw .rsm .stars{font-size:.8rem}
+.mode-tabs{display:grid;grid-template-columns:1fr 1fr;gap:6px;background:var(--paper-2);border-radius:11px;padding:5px;margin-bottom:18px}
+.mode-tab{border:none;background:transparent;border-radius:8px;padding:9px;font-weight:800;font-size:.8rem;color:#4c5b6c;transition:.2s}
+.mode-tab.active{background:var(--red);color:#fff;box-shadow:0 4px 12px rgba(216,64,47,.35)}
+.f-row{margin-bottom:13px}
+.f-row label{display:block;font-size:.7rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#4c5b6c;margin-bottom:5px}
+.f-row select,.f-row input,.f-row textarea{width:100%;border:1.5px solid var(--line);border-radius:10px;padding:11px 12px;font-size:.9rem;font-family:inherit;background:var(--paper);color:var(--ink);transition:.2s}
+.f-row select:focus,.f-row input:focus,.f-row textarea:focus{outline:none;border-color:var(--red);background:#fff}
+.f-2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.f-price{background:var(--paper-2);border-radius:11px;padding:12px 14px;margin:14px 0;font-size:.84rem}
+.f-price .row{display:flex;justify-content:space-between;margin-bottom:4px}
+.f-price .row .n{font-weight:800}
+.f-price .row.tot{border-top:1px dashed var(--line);padding-top:7px;margin-top:7px}
+.f-price .row.tot .n{font-family:'Archivo Black',sans-serif;font-size:1.1rem;color:var(--red)}
+.pay-opts{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:14px 0}
+.pay-opt{border:1.5px solid var(--line);background:var(--paper);border-radius:11px;padding:11px 10px;text-align:left;font-size:.76rem;font-weight:700;color:#4c5b6c;transition:.2s;position:relative}
+.pay-opt .amt{display:block;font-size:.95rem;font-weight:800;color:var(--ink);margin-top:2px}
+.pay-opt.active{border-color:var(--red);background:#fdeeec;color:var(--red)}
+.pay-opt.active .amt{color:var(--red)}
+.pay-opt .tick{position:absolute;top:8px;right:10px;opacity:0}
+.pay-opt.active .tick{opacity:1}
+.f-submit{width:100%;background:var(--red);color:#fff;border:none;border-radius:12px;padding:15px;font-size:.95rem;font-weight:800;box-shadow:0 8px 24px rgba(216,64,47,.4);transition:.2s}
+.f-submit:hover{background:var(--red-dark);transform:translateY(-1px)}
+.f-note{font-size:.7rem;color:#8091a3;text-align:center;margin-top:10px}
+.bookw .trust-mini{list-style:none;margin-top:16px;border-top:1px solid var(--line);padding-top:14px;display:flex;flex-direction:column;gap:7px}
+.bookw .trust-mini li{font-size:.76rem;color:#4c5b6c;display:flex;gap:8px;align-items:flex-start}
+.bookw .trust-mini .tick{color:var(--green);font-weight:900}
+.bookw .quick{display:flex;gap:8px;margin-top:14px}
+.bookw .quick a{flex:1;display:flex;align-items:center;justify-content:center;gap:7px;border:1.5px solid var(--line);border-radius:10px;padding:9px;font-size:.76rem;font-weight:800;transition:.2s}
+.bookw .quick a:hover{border-color:var(--red);color:var(--red)}
+
+/* ===== sections in main col ===== */
+.secb{background:var(--white);border:1px solid var(--line);border-radius:20px;padding:28px;margin-bottom:26px;scroll-margin-top:96px}
+.secb>h2{font-size:1.3rem;font-weight:900;margin-bottom:4px}
+.secb>.sub{font-size:.85rem;color:#4c5b6c;margin-bottom:20px}
+
+/* amenities */
+.amen{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.amen span{display:flex;align-items:center;gap:9px;font-size:.82rem;font-weight:600;background:var(--paper);border-radius:10px;padding:10px 12px;min-width:0;overflow-wrap:anywhere}
+.amen .tick{color:var(--green);font-weight:900}
+@media(max-width:640px){.amen{grid-template-columns:repeat(2,minmax(0,1fr))}.amen span{font-size:.76rem;padding:9px 10px}}
+
+/* captains */
+.caps{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:16px}
+.cap-card{display:flex;gap:14px;background:var(--paper);border-radius:14px;padding:16px}
+.cap-card img{width:64px;height:64px;border-radius:50%;object-fit:cover;flex:0 0 64px}
+.cap-card h3{font-size:.95rem;font-weight:800}
+.cap-card .role{font-size:.7rem;color:var(--red);font-weight:800;letter-spacing:.05em;text-transform:uppercase}
+.cap-card p{font-size:.78rem;color:#4c5b6c;margin-top:4px}
+@media(max-width:640px){.caps{grid-template-columns:1fr}}
+
+/* trip cards */
+.tripcard{display:grid;grid-template-columns:190px minmax(0,1fr) auto;gap:18px;border:1px solid var(--line);border-radius:16px;overflow:hidden;margin-bottom:14px;background:var(--white);transition:.2s}
+.tripcard:hover{box-shadow:var(--shadow);border-color:rgba(216,64,47,.35)}
+.tripcard .timg{position:relative;min-height:150px}
+.tripcard .timg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.tripcard .season{position:absolute;top:10px;left:10px;background:var(--gold);color:var(--deep);font-size:.62rem;font-weight:800;border-radius:99px;padding:3px 10px;text-transform:uppercase;letter-spacing:.05em}
+.tripcard .tbody{padding:16px 0 16px}
+.tripcard h3{font-size:1.05rem;font-weight:800;line-height:1.3}
+.tripcard .desc{font-size:.8rem;color:#4c5b6c;margin:6px 0 10px}
+.tmeta{display:flex;flex-wrap:wrap;gap:6px}
+.tm{background:var(--paper);border:1px solid var(--line);border-radius:7px;font-size:.66rem;font-weight:700;padding:3px 9px;color:#4c5b6c}
+.tripcard .tside{display:flex;flex-direction:column;justify-content:center;align-items:flex-end;gap:8px;padding:16px 18px 16px 0;text-align:right}
+.tripcard .price{font-family:'Archivo Black',sans-serif;font-size:1.25rem;color:var(--ink)}
+.tripcard .price small{display:block;font-family:'Manrope',sans-serif;font-size:.64rem;font-weight:600;color:#8091a3;letter-spacing:.03em}
+.trip-book{background:var(--red);border:none;color:#fff;border-radius:9px;padding:9px 18px;font-weight:800;font-size:.78rem;transition:.2s}
 .trip-book:hover{background:var(--red-dark)}
-.trip-note{margin-top:30px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:18px 22px;font-size:.84rem;color:#cdd9e6;display:flex;gap:12px;align-items:flex-start}
-.trip-note b{color:var(--gold)}
-@media(max-width:980px){.trip-grid{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:640px){.trip-grid{grid-template-columns:1fr}}
+@media(max-width:640px){
+  .tripcard{grid-template-columns:1fr}
+  .tripcard .timg{min-height:160px}
+  .tripcard .tbody{padding:0 16px}
+  .tripcard .tside{flex-direction:row;justify-content:space-between;align-items:center;padding:0 16px 16px;text-align:left}
+}
+.trip-note{margin-top:16px;background:var(--paper);border-radius:12px;padding:14px 18px;font-size:.78rem;color:#4c5b6c}
+.trip-note b{color:var(--red)}
 
-/* ===== gallery ===== */
-.gal{background:var(--paper)}
-.gal-grid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:170px;gap:12px}
-.g{border-radius:14px;overflow:hidden;position:relative;cursor:pointer}
+/* ===== availability calendar ===== */
+.cal-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
+.cal-title{font-weight:900;font-size:1.02rem}
+.cal-nav{border:1.5px solid var(--line);background:var(--paper);border-radius:9px;width:36px;height:36px;font-size:1rem;font-weight:800;transition:.2s}
+.cal-nav:hover:not(:disabled){border-color:var(--red);color:var(--red)}
+.cal-nav:disabled{opacity:.35;cursor:default}
+.cal-dow,.cal-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:5px}
+.cal-dow div{text-align:center;font-size:.66rem;font-weight:800;color:#8091a3;text-transform:uppercase;letter-spacing:.06em;padding:4px 0}
+.cal-day{border:1.5px solid var(--line);border-radius:10px;min-height:56px;padding:5px 6px;background:var(--paper);font-size:.78rem;font-weight:700;cursor:pointer;transition:.15s;position:relative;text-align:left}
+.cal-day:hover:not(.dis):not(.blank){border-color:var(--red)}
+.cal-day.blank{border:none;background:transparent;cursor:default}
+.cal-day.dis{opacity:.35;cursor:default}
+.cal-day.today{border-color:var(--gold);background:#fdf6e7}
+.cal-day.sel{border-color:var(--red);background:#fdeeec;box-shadow:0 3px 10px rgba(216,64,47,.2)}
+.cal-dots{display:flex;gap:3px;margin-top:5px;flex-wrap:wrap}
+.dot{width:9px;height:9px;border-radius:50%}
+.dot.open{background:var(--green)}
+.dot.full{background:var(--red)}
+.dot.note{background:var(--gold)}
+.cal-legend{display:flex;gap:14px;flex-wrap:wrap;margin:14px 0 4px;font-size:.72rem;color:#4c5b6c;font-weight:600}
+.cal-legend span{display:inline-flex;align-items:center;gap:6px}
+.cal-detail{margin-top:14px;border-top:1px solid var(--line);padding-top:16px}
+.cal-detail .cd-date{font-weight:900;font-size:.95rem;margin-bottom:10px}
+.slot{display:flex;align-items:center;gap:12px;background:var(--paper);border-radius:11px;padding:11px 14px;margin-bottom:8px}
+.slot .stime{font-size:.7rem;font-weight:800;color:#4c5b6c;text-transform:uppercase;letter-spacing:.05em;flex:0 0 84px}
+.slot .splan{font-size:.85rem;font-weight:700;flex:1;min-width:0}
+.slot .sstat{font-size:.68rem;font-weight:800;border-radius:99px;padding:3px 10px;white-space:nowrap}
+.slot .sstat.open{background:#e5f5e9;color:var(--green)}
+.slot .sstat.full{background:#fdeeec;color:var(--red)}
+.slot .sstat.req{background:var(--paper-2);color:#4c5b6c}
+.slot .sstat.note{background:#fdf6e7;color:#a8791d}
+.slot .sbook{background:var(--red);color:#fff;border:none;border-radius:8px;padding:7px 14px;font-size:.72rem;font-weight:800}
+.slot .sbook:hover{background:var(--red-dark)}
+.cal-asof{font-size:.68rem;color:#8091a3;margin-top:10px}
+@media(max-width:640px){.slot{flex-wrap:wrap}.slot .stime{flex-basis:100%}}
+
+/* gallery */
+.gal-grid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:130px;gap:9px}
+.g{border-radius:12px;overflow:hidden;position:relative}
 .g img{width:100%;height:100%;object-fit:cover;transition:.45s}
 .g:hover img{transform:scale(1.07)}
 .g.tall{grid-row:span 2}
 .g.wide{grid-column:span 2}
-.g .cap{position:absolute;inset:auto 0 0 0;background:linear-gradient(0deg,rgba(14,28,44,.82),transparent);color:#fff;font-size:.72rem;font-weight:700;padding:22px 12px 10px;opacity:0;transition:.3s;letter-spacing:.03em}
-.g:hover .cap{opacity:1}
-.social-cards{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:34px}
-.social-card{display:flex;align-items:center;gap:18px;background:var(--white);border:1px solid var(--line);border-radius:var(--r);padding:22px 24px;transition:.22s;box-shadow:0 4px 14px rgba(14,28,44,.05)}
-.social-card:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
-.social-ico{flex:0 0 52px;height:52px;border-radius:14px;display:grid;place-items:center;font-size:1.5rem;color:#fff}
-.ig-ico{background:radial-gradient(circle at 30% 110%,#fdf497 0%,#fd5949 45%,#d6249f 60%,#285AEB 90%)}
-.tt-ico{background:#101010}
-.social-card h3{font-size:1rem;font-weight:800}
-.social-card p{font-size:.8rem;color:#4c5b6c}
-.social-card .arrow{margin-left:auto;color:var(--red);font-weight:800;font-size:1.2rem}
-@media(max-width:900px){.gal-grid{grid-template-columns:repeat(2,1fr);grid-auto-rows:150px}.social-cards{grid-template-columns:1fr}}
+.social-cards{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:16px}
+.social-card{display:flex;align-items:center;gap:14px;background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:15px 18px;transition:.2s}
+.social-card:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
+.social-ico{flex:0 0 44px;height:44px;border-radius:12px;display:grid;place-items:center;font-size:1.3rem;color:#fff}
+.ig-bg{background:radial-gradient(circle at 30% 110%,#fdf497 0%,#fd5949 45%,#d6249f 60%,#285AEB 90%)}
+.tt-bg{background:#101010}
+.social-card h3{font-size:.92rem;font-weight:800}
+.social-card p{font-size:.74rem;color:#4c5b6c}
+.social-card .arrow{margin-left:auto;color:var(--red);font-weight:800}
+@media(max-width:760px){.gal-grid{grid-template-columns:repeat(2,1fr)}.social-cards{grid-template-columns:1fr}}
 
-/* ===== booking ===== */
-.book{background:linear-gradient(180deg,var(--paper) 0%,var(--paper-2) 100%)}
-.book-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
-.book-form{background:var(--white);border:1px solid var(--line);border-radius:22px;box-shadow:var(--shadow);padding:34px}
-.mode-tabs{display:grid;grid-template-columns:1fr 1fr;gap:8px;background:var(--paper-2);border-radius:12px;padding:6px;margin-bottom:26px}
-.mode-tab{border:none;background:transparent;border-radius:9px;padding:11px;font-weight:800;font-size:.85rem;color:#4c5b6c;transition:.2s}
-.mode-tab.active{background:var(--red);color:#fff;box-shadow:0 4px 12px rgba(216,64,47,.35)}
-.f-row{margin-bottom:18px}
-.f-row label{display:block;font-size:.76rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#4c5b6c;margin-bottom:7px}
-.f-row select,.f-row input,.f-row textarea{width:100%;border:1.5px solid var(--line);border-radius:11px;padding:13px 14px;font-size:.94rem;font-family:inherit;background:var(--paper);color:var(--ink);transition:.2s}
-.f-row select:focus,.f-row input:focus,.f-row textarea:focus{outline:none;border-color:var(--red);background:#fff}
-.f-2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-.f-price{display:flex;justify-content:space-between;align-items:center;background:var(--paper-2);border-radius:12px;padding:15px 18px;margin:22px 0;font-size:.9rem}
-.f-price .total{font-family:'Archivo Black',sans-serif;font-size:1.3rem;color:var(--red)}
-.f-price .dep{font-size:.72rem;color:#4c5b6c;display:block}
-.f-submit{width:100%;background:var(--red);color:#fff;border:none;border-radius:13px;padding:17px;font-size:1rem;font-weight:800;letter-spacing:.02em;box-shadow:0 8px 24px rgba(216,64,47,.4);transition:.2s}
-.f-submit:hover{background:var(--red-dark);transform:translateY(-1px)}
-.f-note{font-size:.72rem;color:#8091a3;text-align:center;margin-top:13px}
-.book-side h3{font-size:1.05rem;font-weight:800;margin-bottom:12px}
-.avail{background:var(--white);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;box-shadow:0 4px 14px rgba(14,28,44,.05);margin-bottom:26px}
-.avail iframe{width:100%;height:340px;border:0;display:block}
-.avail-cap{font-size:.74rem;color:#4c5b6c;padding:12px 16px;border-top:1px solid var(--line)}
-.contact-quick{display:flex;flex-direction:column;gap:11px}
-.cq{display:flex;align-items:center;gap:14px;background:var(--white);border:1px solid var(--line);border-radius:14px;padding:15px 18px;font-size:.88rem;font-weight:700;transition:.2s}
-.cq:hover{transform:translateX(4px);border-color:var(--red)}
-.cq .ci{flex:0 0 40px;height:40px;border-radius:11px;display:grid;place-items:center;color:#fff;font-size:1.1rem}
-.cq small{display:block;font-size:.7rem;color:#8091a3;font-weight:500}
-@media(max-width:900px){.book-grid{grid-template-columns:1fr}}
+/* reviews */
+.rev-grid{display:flex;gap:22px;align-items:center;flex-wrap:wrap}
+.rev-score{text-align:center;background:var(--paper);border-radius:16px;padding:22px 30px}
+.rev-score .n{font-family:'Archivo Black',sans-serif;font-size:2.6rem;color:var(--ink);line-height:1}
+.rev-score .stars{display:block;margin:6px 0 3px}
+.rev-score small{font-size:.7rem;color:#8091a3;font-weight:600}
+.rev-points{flex:1;min-width:240px;display:flex;flex-direction:column;gap:9px}
+.rev-points span{font-size:.84rem;font-weight:600;display:flex;gap:9px;align-items:center}
+.rev-points .tick{color:var(--green);font-weight:900}
 
-/* ===== access ===== */
-.access{background:var(--deep);color:#fff}
-.access h2{color:#fff}
-.access .sec-head p{color:#9fb2c8}
-.acc-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:stretch}
-.acc-map{border-radius:var(--r);overflow:hidden;border:1px solid rgba(255,255,255,.15);min-height:380px}
-.acc-map iframe{width:100%;height:100%;min-height:380px;border:0;filter:saturate(.9)}
-.acc-items{display:flex;flex-direction:column;gap:18px}
-.acc-item{display:flex;gap:16px;background:#15283e;border:1px solid rgba(255,255,255,.09);border-radius:14px;padding:19px 21px}
-.acc-ico{flex:0 0 44px;height:44px;border-radius:12px;background:rgba(226,166,61,.15);color:var(--gold);display:grid;place-items:center;font-size:1.2rem}
-.acc-item h3{font-size:.95rem;font-weight:800;margin-bottom:3px}
-.acc-item p{font-size:.83rem;color:#9fb2c8}
-@media(max-width:900px){.acc-grid{grid-template-columns:1fr}}
-
-/* ===== faq ===== */
-.faq{background:var(--paper)}
-.faq-list{max-width:840px}
-.faq-item{background:var(--white);border:1px solid var(--line);border-radius:14px;margin-bottom:12px;overflow:hidden}
-.faq-q{width:100%;background:none;border:none;text-align:left;padding:19px 22px;font-size:.95rem;font-weight:800;display:flex;justify-content:space-between;align-items:center;gap:14px;color:var(--ink)}
-.faq-q::after{content:"+";font-family:'Archivo Black',sans-serif;font-size:1.2rem;color:var(--red);transition:.25s;flex:0 0 auto}
+/* faq */
+.faq-item{border:1px solid var(--line);border-radius:12px;margin-bottom:10px;overflow:hidden;background:var(--paper)}
+.faq-q{width:100%;background:none;border:none;text-align:left;padding:15px 18px;font-size:.88rem;font-weight:800;display:flex;justify-content:space-between;align-items:center;gap:14px;color:var(--ink)}
+.faq-q::after{content:"+";font-family:'Archivo Black',sans-serif;font-size:1.1rem;color:var(--red);transition:.25s;flex:0 0 auto}
 .faq-item.open .faq-q::after{transform:rotate(45deg)}
 .faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease}
-.faq-a p{padding:0 22px 20px;font-size:.87rem;color:#4c5b6c}
+.faq-a p{padding:0 18px 16px;font-size:.82rem;color:#4c5b6c}
 
-/* ===== footer ===== */
-footer{background:var(--deep);color:#8fa3ba;padding:56px 0 90px;border-top:3px solid var(--red)}
-.foot-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:40px;margin-bottom:38px}
-.foot-brand{display:flex;align-items:center;gap:12px;margin-bottom:14px}
-.foot-brand img{width:44px;height:44px;border-radius:50%}
-.foot-brand .bt{font-family:'Archivo Black',sans-serif;color:#fff;font-size:1.05rem}
-footer h4{color:#fff;font-size:.8rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;margin-bottom:14px}
-footer a{display:block;font-size:.85rem;margin-bottom:9px;transition:.2s}
+/* access */
+.acc-map{border-radius:14px;overflow:hidden;border:1px solid var(--line);margin-bottom:16px}
+.acc-map iframe{width:100%;height:300px;border:0;display:block}
+.acc-items{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.acc-item{display:flex;gap:12px;background:var(--paper);border-radius:12px;padding:14px 16px}
+.acc-ico{flex:0 0 38px;height:38px;border-radius:10px;background:rgba(226,166,61,.18);color:#a8791d;display:grid;place-items:center;font-size:1.05rem}
+.acc-item h3{font-size:.85rem;font-weight:800;margin-bottom:2px}
+.acc-item p{font-size:.76rem;color:#4c5b6c}
+.acc-item a{color:var(--red);text-decoration:underline}
+@media(max-width:640px){.acc-items{grid-template-columns:1fr}}
+
+/* footer */
+footer{background:var(--deep);color:#8fa3ba;padding:46px 0 80px;border-top:3px solid var(--red)}
+.foot-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:36px;margin-bottom:32px}
+.foot-brand{display:flex;align-items:center;gap:12px;margin-bottom:12px}
+.foot-brand img{width:42px;height:42px;border-radius:50%}
+.foot-brand .bt{font-weight:900;color:#fff;font-size:1.15rem;font-family:'Noto Sans JP',sans-serif;letter-spacing:.06em}
+.foot-brand .bs{font-size:.58rem;letter-spacing:.24em;color:var(--gold);font-weight:800;text-transform:uppercase;display:block}
+footer h4{color:#fff;font-size:.76rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;margin-bottom:12px}
+footer a{display:block;font-size:.83rem;margin-bottom:8px;transition:.2s}
 footer a:hover{color:var(--gold)}
-footer p{font-size:.82rem}
-.demo-note{border-top:1px solid rgba(255,255,255,.12);padding-top:22px;font-size:.72rem;line-height:1.8;color:#5f7288}
+footer p{font-size:.8rem}
+.demo-note{border-top:1px solid rgba(255,255,255,.12);padding-top:20px;font-size:.7rem;line-height:1.8;color:#5f7288}
 @media(max-width:800px){.foot-grid{grid-template-columns:1fr}}
 
-/* ===== sticky mobile CTA ===== */
-.sticky-cta{position:fixed;left:0;right:0;bottom:0;z-index:300;display:none;background:rgba(14,28,44,.9);backdrop-filter:blur(10px);padding:10px 14px calc(10px + env(safe-area-inset-bottom));gap:10px}
-.sticky-cta a{flex:1;text-align:center;border-radius:12px;padding:14px;font-weight:800;font-size:.9rem}
-.sticky-cta .s1{background:var(--red);color:#fff}
-.sticky-cta .s2{background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.25)}
-@media(max-width:900px){.sticky-cta{display:flex}footer{padding-bottom:120px}}
+/* sticky mobile bar */
+.sticky-cta{position:fixed;left:0;right:0;bottom:0;z-index:300;display:none;background:rgba(255,253,248,.96);backdrop-filter:blur(10px);border-top:1px solid var(--line);padding:10px 16px calc(10px + env(safe-area-inset-bottom));align-items:center;gap:12px}
+.sticky-cta .sp{line-height:1.2}
+.sticky-cta .sp .n{font-family:'Archivo Black',sans-serif;font-size:1.05rem;color:var(--red)}
+.sticky-cta .sp small{font-size:.64rem;color:#4c5b6c;font-weight:600;display:block}
+.sticky-cta a.go{flex:1;text-align:center;background:var(--red);color:#fff;border-radius:11px;padding:13px;font-weight:800;font-size:.9rem}
+@media(max-width:980px){.sticky-cta{display:flex}footer{padding-bottom:110px}}
 
-/* ===== modal ===== */
+/* modal */
 .modal-bg{position:fixed;inset:0;background:rgba(14,28,44,.72);backdrop-filter:blur(6px);z-index:500;display:none;align-items:center;justify-content:center;padding:20px}
 .modal-bg.show{display:flex}
-.modal{background:var(--white);border-radius:22px;max-width:480px;width:100%;max-height:90vh;overflow:auto;padding:34px;position:relative;animation:pop .3s ease}
+.modal{background:var(--white);border-radius:20px;max-width:470px;width:100%;max-height:90vh;overflow:auto;padding:30px;position:relative;animation:pop .3s ease}
 @keyframes pop{from{transform:scale(.94);opacity:0}to{transform:scale(1);opacity:1}}
-.modal-close{position:absolute;top:16px;right:16px;background:var(--paper-2);border:none;width:36px;height:36px;border-radius:50%;font-size:1rem;font-weight:800;color:var(--ink)}
-.modal h3{font-size:1.25rem;font-weight:800;margin-bottom:6px}
-.modal .msub{font-size:.83rem;color:#4c5b6c;margin-bottom:20px}
-.pay-sum{background:var(--paper);border:1px solid var(--line);border-radius:13px;padding:16px 18px;margin-bottom:20px;font-size:.86rem}
-.pay-sum .row{display:flex;justify-content:space-between;margin-bottom:6px}
-.pay-sum .row.total{border-top:1px dashed var(--line);padding-top:9px;margin-top:9px;font-weight:800;color:var(--red)}
-.demo-badge{display:inline-block;background:var(--gold);color:var(--deep);font-size:.64rem;font-weight:800;letter-spacing:.1em;border-radius:6px;padding:3px 9px;margin-bottom:14px;text-transform:uppercase}
-.stripe-row{border:1.5px solid var(--line);border-radius:11px;padding:13px 14px;font-size:.9rem;color:#8091a3;margin-bottom:12px;display:flex;justify-content:space-between;background:var(--paper)}
-.ok-icon{width:74px;height:74px;border-radius:50%;background:#e5f5e9;color:#27a35a;display:grid;place-items:center;font-size:2.1rem;margin:0 auto 18px}
+.modal-close{position:absolute;top:14px;right:14px;background:var(--paper-2);border:none;width:34px;height:34px;border-radius:50%;font-size:.95rem;font-weight:800;color:var(--ink)}
+.modal h3{font-size:1.2rem;font-weight:800;margin-bottom:5px}
+.modal .msub{font-size:.82rem;color:#4c5b6c;margin-bottom:18px}
+.pay-sum{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin-bottom:16px;font-size:.84rem}
+.pay-sum .row{display:flex;justify-content:space-between;margin-bottom:5px}
+.pay-sum .row.total{border-top:1px dashed var(--line);padding-top:8px;margin-top:8px;font-weight:800;color:var(--red)}
+.demo-badge{display:inline-block;background:var(--gold);color:var(--deep);font-size:.62rem;font-weight:800;letter-spacing:.1em;border-radius:6px;padding:3px 9px;margin-bottom:12px;text-transform:uppercase}
+.stripe-row{border:1.5px solid var(--line);border-radius:10px;padding:12px 13px;font-size:.88rem;color:#8091a3;margin-bottom:10px;display:flex;justify-content:space-between;background:var(--paper)}
+.ok-icon{width:70px;height:70px;border-radius:50%;background:#e5f5e9;color:#27a35a;display:grid;place-items:center;font-size:2rem;margin:0 auto 16px}
 
-/* reveal */
-.rv{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+.rv{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
 .rv.in{opacity:1;transform:none}
 
 #gate{position:fixed;inset:0;z-index:900;display:grid;place-items:center;background:var(--deep);padding:1rem}
@@ -295,8 +338,8 @@ footer p{font-size:.82rem}
 <div id="gate">
   <form class="gate-card" onsubmit="return tryGate(event)">
     <img src="assets/mascot-squid.png" alt="">
-    <div class="gt">TANINOMARU</div>
-    <span class="gs">Client Preview · Demo Site</span>
+    <div class="gt" style="font-family:'Noto Sans JP',sans-serif;font-weight:900">谷野丸</div>
+    <span class="gs">Taninomaru · Client Preview · Demo Site</span>
     <p><span class="en">Enter the access code you received to view this design proposal.</span><span class="ja">お受け取りのアクセスコードを入力してください。</span></p>
     <input id="gateCode" autocomplete="off" placeholder="ACCESS CODE" aria-label="access code">
     <button type="submit"><span class="en">View the site</span><span class="ja">サイトを見る</span></button>
@@ -313,430 +356,389 @@ footer p{font-size:.82rem}
 <header id="header">
   <div class="wrap nav">
     <a class="brand" href="#top">
-      <img src="assets/mascot-squid.png" alt="Taninomaru squid mascot">
-      <span><span class="bt">TANINOMARU</span><br><span class="bs">Fishing Charter</span></span>
+      <img src="assets/mascot-squid.png" alt="谷野丸 mascot">
+      <span><span class="bt">谷野丸</span><br><span class="bs">Taninomaru Charter</span></span>
     </a>
     <nav class="nav-links">
-      <a href="#trips"><span class="en">Trips &amp; Prices</span><span class="ja">プラン・料金</span></a>
-      <a href="#why"><span class="en">Our Boats</span><span class="ja">船・船長</span></a>
-      <a href="#gallery"><span class="en">Gallery</span><span class="ja">ギャラリー</span></a>
+      <a href="#trips"><span class="en">Trips</span><span class="ja">プラン</span></a>
+      <a href="#avail"><span class="en">Availability</span><span class="ja">空き状況</span></a>
+      <a href="#gallery"><span class="en">Photos</span><span class="ja">写真</span></a>
       <a href="#access"><span class="en">Access</span><span class="ja">アクセス</span></a>
-      <a href="#faq"><span class="en">FAQ</span><span class="ja">よくある質問</span></a>
+      <a href="#faq">FAQ</a>
     </nav>
-    <button class="lang-btn" id="langBtn" onclick="toggleLang()">日本語</button>
-    <button class="cta-s" onclick="location.href='#book'"><span class="en">Book Now</span><span class="ja">予約する</span></button>
+    <div class="icon-links">
+      <a class="ic ig" href="https://www.instagram.com/taninomaru_/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram">📷</a>
+      <a class="ic tt" href="https://www.tiktok.com/@taninomaru123456" target="_blank" rel="noopener" aria-label="TikTok" title="TikTok">🎬</a>
+      <a class="ic tel" href="tel:+818014964938" aria-label="Call 080-1496-4938" title="080-1496-4938">📞</a>
+      <span class="ic wa" aria-label="WhatsApp coming soon" title="WhatsApp — coming soon">💬<span class="soon"><span class="en">SOON</span><span class="ja">準備中</span></span></span>
+    </div>
+    <div class="seg" role="group" aria-label="Language">
+      <button type="button" id="segEn" class="active">EN</button>
+      <button type="button" id="segJa">日本語</button>
+    </div>
+    <button class="cta-s" onclick="goBook()"><span class="en">Book Now</span><span class="ja">予約する</span></button>
   </div>
 </header>
 
 <!-- ============ HERO ============ -->
-<section class="hero" id="top">
-  <div class="hero-grid">
-    <div class="hero-copy">
-      <span class="hero-kicker"><span class="en">Family-run since two generations</span><span class="ja">親子二代・二隻体制の遊漁船</span></span>
-      <h1 class="disp">
-        <span class="en block">Hook your<br><span class="accent">Japan</span> <span class="stroke">trophy.</span></span>
-        <span class="ja block">和歌山の海で、<br><span class="accent">一生モノの一匹</span>を。</span>
-      </h1>
-      <p class="hero-sub">
-        <span class="en">Tuna, Spanish mackerel, red sea bream, and legendary summer-night squid — fished from a 16-meter charter boat on Wakayama's Kii Channel. Beginners and travelers welcome: full gear rental, and booking in English right here.</span>
-        <span class="ja">キハダ、サワラ、マダイ、そして夏の風物詩・夜焚きアカイカ。紀伊水道の好漁場を、全長16mの大型遊漁船で。初心者・旅行者歓迎、タックルフルレンタルOK。</span>
-      </p>
-      <div class="hero-ctas">
-        <button class="cta-main" onclick="location.href='#book'"><span class="en">Book Your Trip</span><span class="ja">予約に進む</span> →</button>
-        <button class="cta-ghost" onclick="askMode()"><span class="en">Just Ask a Question</span><span class="ja">まず質問する</span></button>
-      </div>
-      <div class="hero-chips">
-        <span class="chip"><span class="en">From <b>¥12,000</b> / angler</span><span class="ja"><b>¥12,000</b>〜/人</span></span>
-        <span class="chip"><span class="en"><b>Full rental</b> ¥2,000</span><span class="ja">レンタル一式 <b>¥2,000</b></span></span>
-        <span class="chip"><span class="en"><b>No license</b> needed</span><span class="ja">釣り免許<b>不要</b></span></span>
-        <span class="chip"><span class="en">Toilet on board</span><span class="ja">トイレ・キャビン完備</span></span>
-        <span class="chip"><span class="en">Cards &amp; QR pay OK</span><span class="ja">カード・QR決済OK</span></span>
+<section class="hero wrap" id="top">
+  <div class="collage">
+    <div class="c c1"><img src="assets/hero-tuna.jpg" alt="Angler holding a yellowfin tuna on the 谷野丸 deck"></div>
+    <div class="c c2"><img src="assets/squid-sunset.jpg" alt="Sunset squid fishing"></div>
+    <div class="c c3"><img src="assets/boat-port.jpg" alt="谷野丸 boats at Shioya Port"></div>
+    <div class="c c4"><img src="assets/guests-madai-board.jpg" alt="Guests with red sea bream catch"></div>
+    <div class="c c5"><img src="assets/squid-haul-guests.jpg" alt="Guests with trays of squid"><a class="badge-photos" href="#gallery"><span class="en">📸 View all photos</span><span class="ja">📸 写真をもっと見る</span></a></div>
+  </div>
+  <div class="title-row">
+    <div style="flex:1;min-width:260px">
+      <h1 class="disp"><span class="en block">谷野丸 — Taninomaru Fishing Charter</span><span class="ja block">谷野丸（たにのまる）— 御坊・塩屋港の遊漁船</span></h1>
+      <p class="sub"><span class="en">Family-run charter · Shioya Port, Gobo City, Wakayama · Kii Channel</span><span class="ja">親子二代・二隻体制 · 和歌山県御坊市塩屋港 · 紀伊水道</span></p>
+      <div class="rate-line">
+        <span class="stars">★★★★★</span><b>5.0</b>
+        <span style="color:#8091a3">·</span>
+        <span class="pill hot"><span class="en">Beginner friendly</span><span class="ja">初心者大歓迎</span></span>
+        <span class="pill"><span class="en">Gear rental ¥2,000</span><span class="ja">レンタル¥2,000</span></span>
+        <span class="pill"><span class="en">No license needed</span><span class="ja">釣り免許不要</span></span>
+        <span class="pill"><span class="en">English booking OK</span><span class="ja">英語予約対応</span></span>
       </div>
     </div>
-    <div class="hero-visual">
-      <img src="assets/hero-tuna.jpg" alt="Angler holding a yellowfin tuna on the Taninomaru deck under blue sky">
-      <div class="hero-tag"><span class="en">📍 Shioya Port, Gobo · <b>Real catch photo</b> from our deck</span><span class="ja">📍 御坊市 塩屋港 · <b>実際の釣果写真</b></span></div>
-    </div>
+  </div>
+  <div class="trust">
+    <span><i class="tick">✓</i><span class="en">Free cancellation until 7 days before</span><span class="ja">7日前までキャンセル無料</span></span>
+    <span><i class="tick">✓</i><span class="en">Pay by card — deposit or in full (Stripe)</span><span class="ja">カード決済対応（Stripe）</span></span>
+    <span><i class="tick">✓</i><span class="en">Reply within 24 h</span><span class="ja">24時間以内に返信</span></span>
+    <span><i class="tick">✓</i><span class="en">Ice included on every trip</span><span class="ja">氷は全プラン込み</span></span>
   </div>
 </section>
 
-<!-- ============ FLOW ============ -->
-<div class="flow">
-  <div class="wrap flow-grid">
-    <div class="flow-step"><span class="flow-num">01</span><p><span class="en">Discover<span class="sub2">Pick your dream trip</span></span><span class="ja">プランを選ぶ<span class="sub2">狙いたい魚から</span></span></p></div>
-    <div class="flow-step"><span class="flow-num">02</span><p><span class="en">Ask anything<span class="sub2">English OK, fast reply</span></span><span class="ja">気軽に質問<span class="sub2">英語対応・即レス</span></span></p></div>
-    <div class="flow-step"><span class="flow-num">03</span><p><span class="en">Book your date<span class="sub2">Live availability below</span></span><span class="ja">日程を予約<span class="sub2">空き状況カレンダー</span></span></p></div>
-    <div class="flow-step"><span class="flow-num">04</span><p><span class="en">Secure &amp; pay<span class="sub2">30% deposit, rest on board</span></span><span class="ja">決済して確定<span class="sub2">30%前払い・残額当日</span></span></p></div>
-  </div>
-</div>
+<!-- ============ MAIN ============ -->
+<div class="wrap main-grid">
 
-<!-- ============ WHY ============ -->
-<section class="sec why" id="why">
-  <div class="wrap">
-    <div class="sec-head rv">
-      <span class="kicker"><span class="en">Why Taninomaru</span><span class="ja">たにの丸について</span></span>
-      <h2 class="disp"><span class="en block">Two boats. Two captains.<br>One fishing family.</span><span class="ja block">二隻の船と、親子二代の船長。</span></h2>
-      <p><span class="en">Taninomaru is run by a father-and-son team out of Shioya Port, Gobo. The son, Captain Koki, skippers the lure boat — casting, jigging, tairaba. His father runs the classic bait boat, Tanino-maru. Whatever style of fishing you dream of, one of our boats is rigged for it.</span><span class="ja">たにの丸は御坊市塩屋港の親子二代の遊漁船。若船長こうきのルアー船（キャスティング・ジギング・タイラバ）と、父の谷野丸（エサ釣り）の二隻体制。やりたい釣りに合わせてご案内します。</span></p>
-    </div>
-    <div class="why-grid">
-      <div class="why-photos rv">
-        <img class="mascot" src="assets/mascot-squid.png" alt="Taninomaru squid mascot logo">
-        <img class="p1" src="assets/boat-port.jpg" alt="Taninomaru charter boats moored at Shioya Port, Wakayama">
-        <img class="p2" src="assets/captain-senior-boat.jpg" alt="Senior captain in front of the Taninomaru hull after a night squid trip">
+  <!-- ===== booking widget ===== -->
+  <aside class="col-book">
+    <div class="bookw" id="book">
+      <div class="from"><span class="n">¥12,000</span><span class="l"><span class="en">/ angler · from</span><span class="ja">〜 / 人</span></span></div>
+      <p class="rsm"><span class="stars">★★★★★</span> 5.0 · <span class="en">booking-site rating</span><span class="ja">予約サイト評価</span></p>
+      <div class="mode-tabs">
+        <button class="mode-tab active" id="tabBook" onclick="setMode('book')"><span class="en">📅 Book</span><span class="ja">📅 予約</span></button>
+        <button class="mode-tab" id="tabAsk" onclick="setMode('ask')"><span class="en">💬 Question</span><span class="ja">💬 質問</span></button>
       </div>
-      <div class="rv">
-        <div class="why-list">
-          <div class="why-item">
-            <div class="why-ico">🚢</div>
-            <div><h3><span class="en">A real 16-meter fishing machine</span><span class="ja">全長16m・8トンの大型船</span></h3>
-            <p><span class="en">8-ton hull with toilet, cabin, fridge &amp; freezer, microwave, hot water and power outlets at every station. Stay comfortable from first cast to last.</span><span class="ja">トイレ・キャビン・冷蔵冷凍庫・電子レンジ・ポット・各席電源（12V/100V）完備。長時間の釣りも快適。</span></p></div>
-          </div>
-          <div class="why-item">
-            <div class="why-ico">🔰</div>
-            <div><h3><span class="en">Beginners are the specialty</span><span class="ja">初心者大歓迎</span></h3>
-            <p><span class="en">"初心者大歓迎" — beginners very welcome — is the house motto. The crew hands-on coaches your first jig drop, and rental covers rod, reel and life jacket.</span><span class="ja">レンタルタックル・ライフジャケットあり。初めての方には船長が釣り方を丁寧にサポートします。</span></p></div>
-          </div>
-          <div class="why-item">
-            <div class="why-ico">🌏</div>
-            <div><h3><span class="en">Easy for travelers</span><span class="ja">旅行者にやさしい</span></h3>
-            <p><span class="en">About 90 min by car from Kansai Int'l Airport, free parking at the dock, cashless payment on board, and this page handles your booking in English end-to-end.</span><span class="ja">関空から約90分・御坊ICから6km、無料駐車場あり。船上でカード・QR決済も使えます。</span></p></div>
-          </div>
-          <div class="why-item">
-            <div class="why-ico">🦑</div>
-            <div><h3><span class="en">Home of the night-squid festival</span><span class="ja">夜焚きアカイカの本場</span></h3>
-            <p><span class="en">In summer, our decks glow over the dark sea for akaika squid nights — the catch our squid mascot is famous for. Guests go home with coolers full.</span><span class="ja">夏はアカイカの夜焚きシーズン。マスコットのイカロゴはこの釣りの証。クーラー満タンでお帰りいただきます。</span></p></div>
-          </div>
+      <form id="bookForm" onsubmit="return submitForm(event)">
+        <div class="f-row">
+          <label><span class="en">Trip</span><span class="ja">プラン</span></label>
+          <select id="fPlan" onchange="calcPrice()"></select>
         </div>
-      </div>
-    </div>
-    <div class="stats rv">
-      <div class="stat"><div class="n">16m</div><div class="l"><span class="en">Boat length</span><span class="ja">全長</span></div></div>
-      <div class="stat"><div class="n">2</div><div class="l"><span class="en">Boats / styles</span><span class="ja">二隻体制</span></div></div>
-      <div class="stat"><div class="n">5.0<span style="font-size:.9rem">★</span></div><div class="l"><span class="en">Booking-site rating</span><span class="ja">予約サイト評価</span></div></div>
-      <div class="stat"><div class="n">15</div><div class="l"><span class="en">Max capacity</span><span class="ja">最大定員</span></div></div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ TRIPS ============ -->
-<section class="sec trips" id="trips">
-  <div class="wrap">
-    <div class="sec-head rv">
-      <span class="kicker"><span class="en">Trips &amp; Prices</span><span class="ja">プラン・料金</span></span>
-      <h2 class="disp"><span class="en block">Pick your battle.</span><span class="ja block">狙う魚を選ぼう。</span></h2>
-      <p><span class="en">All trips are shared-boat prices per angler. Ice is always included. Want the whole boat for your group? Ask us about private charters.</span><span class="ja">料金は乗合・お一人様あたり。氷は全プラン込み。グループ貸切（仕立て）もご相談ください。</span></p>
-    </div>
-    <div class="trip-grid">
-      <div class="trip rv">
-        <div class="trip-img"><img src="assets/catch-sawara-wide.jpg" alt="Angler with a big Spanish mackerel (sawara)"><span class="trip-season"><span class="en">Autumn–Spring</span><span class="ja">秋〜春</span></span></div>
-        <div class="trip-body">
-          <h3><span class="en">Sawara Casting</span><span class="ja">サワラキャスティング</span></h3>
-          <p class="desc"><span class="en">Chase boiling schools of Spanish mackerel with topwater and blades. Explosive strikes, half-day format — morning or afternoon.</span><span class="ja">ナブラ撃ちで爆発的なバイトを。午前便・午後便の半日開催。</span></p>
-          <div class="trip-meta"><span class="tm">7:00–12:00 / 12:00–17:00</span><span class="tm"><span class="en">Lure</span><span class="ja">ルアー</span></span></div>
-          <div class="trip-foot"><div class="price">¥13,000<span><span class="en">per angler</span><span class="ja">お一人様</span></span></div><button class="trip-book" onclick="pickPlan('sawara')"><span class="en">Book</span><span class="ja">予約</span></button></div>
-        </div>
-      </div>
-      <div class="trip rv">
-        <div class="trip-img"><img src="assets/plan-madai.jpg" alt="Red sea bream (madai) in a cooler box"><span class="trip-season"><span class="en">All year</span><span class="ja">通年</span></span></div>
-        <div class="trip-body">
-          <h3><span class="en">Morning Lure — SLJ · Tairaba · Jigging</span><span class="ja">朝便ルアー五目（SLJ・タイラバ・ジギング）</span></h3>
-          <p class="desc"><span class="en">The classic Kii Channel mixed bag: red sea bream, amberjack, grouper, blue runners. Light tackle, big surprises — the best all-rounder for first-timers.</span><span class="ja">マダイ・青物・根魚なんでも狙える紀伊水道の定番。初挑戦にもおすすめ。</span></p>
-          <div class="trip-meta"><span class="tm">~5:00 <span class="en">departure</span><span class="ja">出船</span></span><span class="tm"><span class="en">Beginner best</span><span class="ja">初心者◎</span></span></div>
-          <div class="trip-foot"><div class="price">¥13,000<span><span class="en">per angler</span><span class="ja">お一人様</span></span></div><button class="trip-book" onclick="pickPlan('lure-am')"><span class="en">Book</span><span class="ja">予約</span></button></div>
-        </div>
-      </div>
-      <div class="trip rv">
-        <div class="trip-img"><img src="assets/hero-squid-sunset.jpg" alt="Angler lifting akaika squid at sunset during ika-metal fishing"><span class="trip-season"><span class="en">Summer nights</span><span class="ja">夏・夜</span></span></div>
-        <div class="trip-body">
-          <h3><span class="en">Night Squid Festival — Akaika</span><span class="ja">アカイカ夜焚き（イカメタル）</span></h3>
-          <p class="desc"><span class="en">Fish under deck lights on a warm summer night. Sweet red squid by the tray-full — the most photogenic, family-friendly trip we run.</span><span class="ja">夏の夜、漁火の下でアカイカを数釣り。ファミリーにも人気の名物プラン。</span></p>
-          <div class="trip-meta"><span class="tm">~17:00–22:00</span><span class="tm"><span class="en">Jun–Sep</span><span class="ja">6〜9月</span></span></div>
-          <div class="trip-foot"><div class="price">¥13,000<span><span class="en">per angler</span><span class="ja">お一人様</span></span></div><button class="trip-book" onclick="pickPlan('squid')"><span class="en">Book</span><span class="ja">予約</span></button></div>
-        </div>
-      </div>
-      <div class="trip rv">
-        <div class="trip-img"><img src="assets/plan-hiramasa.jpg" alt="Amberjack caught on a jig lying on deck"><span class="trip-season"><span class="en">All year</span><span class="ja">通年</span></span></div>
-        <div class="trip-body">
-          <h3><span class="en">Afternoon Jigging</span><span class="ja">午後便ジギング</span></h3>
-          <p class="desc"><span class="en">Sleep in, then fight amberjack, yellowtail and bottom fish through the afternoon. Perfect add-on to a Wakayama sightseeing morning.</span><span class="ja">午後からゆっくり出船して青物・根魚を。観光と組み合わせやすい便。</span></p>
-          <div class="trip-meta"><span class="tm">12:00–</span><span class="tm"><span class="en">Lure</span><span class="ja">ルアー</span></span></div>
-          <div class="trip-foot"><div class="price">¥12,000<span><span class="en">per angler</span><span class="ja">お一人様</span></span></div><button class="trip-book" onclick="pickPlan('jig-pm')"><span class="en">Book</span><span class="ja">予約</span></button></div>
-        </div>
-      </div>
-      <div class="trip rv">
-        <div class="trip-img"><img src="assets/squid-tray.jpg" alt="Tray of fresh aori squid caught tip-run style"><span class="trip-season"><span class="en">Autumn</span><span class="ja">秋</span></span></div>
-        <div class="trip-body">
-          <h3><span class="en">Tip-Run Aori Squid</span><span class="ja">ティップラン（アオリイカ）</span></h3>
-          <p class="desc"><span class="en">Finesse fishing for the "king of squid" — prized aori ika, sashimi-grade straight from the live well. Evening half-day trip.</span><span class="ja">イカの王様アオリイカを夕方便で。釣りたてはお刺身で絶品。</span></p>
-          <div class="trip-meta"><span class="tm">16:00–21:00</span><span class="tm"><span class="en">Lure</span><span class="ja">ルアー</span></span></div>
-          <div class="trip-foot"><div class="price">¥12,000<span><span class="en">per angler</span><span class="ja">お一人様</span></span></div><button class="trip-book" onclick="pickPlan('tiprun')"><span class="en">Book</span><span class="ja">予約</span></button></div>
-        </div>
-      </div>
-      <div class="trip rv">
-        <div class="trip-img"><img src="assets/plan-isaki.jpg" alt="Cooler full of isaki grunt fish"><span class="trip-season"><span class="en">All year</span><span class="ja">通年</span></span></div>
-        <div class="trip-body">
-          <h3><span class="en">Bait Fishing with the Senior Captain</span><span class="ja">エサ釣り便（谷野丸）</span></h3>
-          <p class="desc"><span class="en">Isaki, big night aji (40cm+), drop-shot live-bait for kanpachi — old-school bait fishing aboard Tanino-maru with 40+ years of local knowledge.</span><span class="ja">イサキ・大アジ・落とし込みノマセ。ベテラン船長の谷野丸でじっくりエサ釣り。</span></p>
-          <div class="trip-meta"><span class="tm"><span class="en">Morning / Night</span><span class="ja">朝便・夜便</span></span><span class="tm"><span class="en">Bait</span><span class="ja">エサ</span></span></div>
-          <div class="trip-foot"><div class="price">¥12–13,000<span><span class="en">per angler</span><span class="ja">お一人様</span></span></div><button class="trip-book" onclick="pickPlan('bait')"><span class="en">Book</span><span class="ja">予約</span></button></div>
-        </div>
-      </div>
-    </div>
-    <div class="trip-note rv">
-      <span style="font-size:1.3rem">💡</span>
-      <p><span class="en"><b>Good to know:</b> shared trips sail from 2 anglers · rental rod &amp; reel set <b>¥2,000</b> (lure or electric-reel bait set) · ice included in every plan · lunch &amp; drinks bring-your-own (fridge, freezer, microwave &amp; hot water on board) · schedules shift with season and weather — we'll confirm exact times when you book.</span><span class="ja"><b>ご案内:</b> 乗合は2名様から出船 · レンタルタックル一式<b>¥2,000</b>（ルアー用/電動リールエサ用） · 全プラン氷込み · 食事・飲み物は持ち込み（船内に冷蔵冷凍庫・レンジ・ポットあり） · 出船時間は季節・天候により変わります。予約時に確定します。</span></p>
-    </div>
-  </div>
-</section>
-
-<!-- ============ GALLERY ============ -->
-<section class="sec gal" id="gallery">
-  <div class="wrap">
-    <div class="sec-head rv">
-      <span class="kicker"><span class="en">Straight from our Instagram</span><span class="ja">インスタの釣果から</span></span>
-      <h2 class="disp"><span class="en block">Proof, not promises.</span><span class="ja block">釣果がすべて。</span></h2>
-      <p><span class="en">Every photo below is a real catch by real guests, posted on our Instagram. This is what your day can look like.</span><span class="ja">すべて実際のお客様の釣果写真です。あなたの一日もこうなるかも。</span></p>
-    </div>
-    <div class="gal-grid rv">
-      <div class="g tall"><img src="assets/squid-sunset.jpg" alt="Sunset akaika squid double catch" loading="lazy"><span class="cap"><span class="en">Summer night akaika</span><span class="ja">夏の夜焚きアカイカ</span></span></div>
-      <div class="g wide"><img src="assets/catch-yellowfin-tuna.jpg" alt="Yellowfin tuna trophy catch" loading="lazy"><span class="cap"><span class="en">Yellowfin tuna — trophy day</span><span class="ja">キハダマグロ</span></span></div>
-      <div class="g"><img src="assets/guests-madai-board.jpg" alt="Guests with red sea bream catch and Taninomaru board" loading="lazy"><span class="cap"><span class="en">Madai with the crew board</span><span class="ja">マダイ釣果</span></span></div>
-      <div class="g"><img src="assets/night-squid-woman.jpg" alt="Smiling guest holding squid at night" loading="lazy"><span class="cap"><span class="en">First-timer, first squid</span><span class="ja">初めての夜焚き</span></span></div>
-      <div class="g"><img src="assets/catch-grouper.jpg" alt="Grouper caught jigging" loading="lazy"><span class="cap"><span class="en">Grouper on the jig</span><span class="ja">ジギングでハタ</span></span></div>
-      <div class="g tall"><img src="assets/squid-haul-guests.jpg" alt="Two guests with trays full of big squid" loading="lazy"><span class="cap"><span class="en">Trays full — happy customers</span><span class="ja">トロ箱満タン</span></span></div>
-      <div class="g"><img src="assets/catch-amberjack-wide.jpg" alt="Angler with amberjack" loading="lazy"><span class="cap"><span class="en">Kii Channel amberjack</span><span class="ja">紀伊水道の青物</span></span></div>
-      <div class="g"><img src="assets/night-squid-guests.jpg" alt="Guests with the night squid catch laid out" loading="lazy"><span class="cap"><span class="en">The night's haul</span><span class="ja">夜焚きの釣果</span></span></div>
-      <div class="g"><img src="assets/catch-tachiuo.jpg" alt="Big hairtail caught at night" loading="lazy"><span class="cap"><span class="en">Dragon-size hairtail</span><span class="ja">ドラゴン太刀魚</span></span></div>
-      <div class="g"><img src="assets/plan-night-group.jpg" alt="Group photo after night fishing" loading="lazy"><span class="cap"><span class="en">Group night out</span><span class="ja">仲間と夜焚き</span></span></div>
-    </div>
-    <div class="social-cards rv">
-      <a class="social-card" href="https://www.instagram.com/taninomaru_/" target="_blank" rel="noopener">
-        <span class="social-ico ig-ico">📷</span>
-        <span><h3>@taninomaru_</h3><p><span class="en">Daily catch reports on Instagram — see what's biting this week</span><span class="ja">Instagramでほぼ毎日釣果更新中</span></p></span>
-        <span class="arrow">→</span>
-      </a>
-      <a class="social-card" href="https://www.tiktok.com/@taninomaru123456" target="_blank" rel="noopener">
-        <span class="social-ico tt-ico">🎬</span>
-        <span><h3>TikTok</h3><p><span class="en">Watch the action — strikes, fights and squid nights on video</span><span class="ja">TikTokでヒットシーン・夜焚きの動画を公開中</span></p></span>
-        <span class="arrow">→</span>
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- ============ BOOKING ============ -->
-<section class="sec book" id="book">
-  <div class="wrap">
-    <div class="sec-head rv">
-      <span class="kicker"><span class="en">Book or ask — one stop</span><span class="ja">予約・お問い合わせ</span></span>
-      <h2 class="disp"><span class="en block">Reserve your deck spot.</span><span class="ja block">釣り座を押さえよう。</span></h2>
-      <p><span class="en">Check the live calendar, send your request, and secure it with a 30% deposit. Not ready? Switch to "Question" mode and just ask — no commitment.</span><span class="ja">空き状況を確認してリクエスト送信、30%のデポジットで確定。迷っている方は「質問モード」でお気軽にどうぞ。</span></p>
-    </div>
-    <div class="book-grid">
-      <div class="book-form rv">
-        <div class="mode-tabs">
-          <button class="mode-tab active" id="tabBook" onclick="setMode('book')"><span class="en">📅 Book a Trip</span><span class="ja">📅 予約する</span></button>
-          <button class="mode-tab" id="tabAsk" onclick="setMode('ask')"><span class="en">💬 Just a Question</span><span class="ja">💬 質問だけ</span></button>
-        </div>
-        <form id="bookForm" onsubmit="return submitForm(event)">
+        <div class="f-2 bookOnly">
           <div class="f-row">
-            <label><span class="en">Trip</span><span class="ja">プラン</span></label>
-            <select id="fPlan" onchange="calcPrice()">
-              <option value="sawara" data-price="13000">Sawara Casting — ¥13,000</option>
-              <option value="lure-am" data-price="13000">Morning Lure (SLJ/Tairaba/Jigging) — ¥13,000</option>
-              <option value="squid" data-price="13000">Night Squid Festival (Akaika) — ¥13,000</option>
-              <option value="jig-pm" data-price="12000">Afternoon Jigging — ¥12,000</option>
-              <option value="tiprun" data-price="12000">Tip-Run Aori Squid — ¥12,000</option>
-              <option value="bait" data-price="13000">Bait Fishing (Tanino-maru) — ¥13,000</option>
-              <option value="charter" data-price="0">Private Charter — ask us / 貸切相談</option>
+            <label><span class="en">Date</span><span class="ja">希望日</span></label>
+            <input type="date" id="fDate">
+          </div>
+          <div class="f-row">
+            <label><span class="en">Anglers</span><span class="ja">人数</span></label>
+            <select id="fPax" onchange="calcPrice()">
+              <option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option>
             </select>
           </div>
-          <div class="f-2 bookOnly">
-            <div class="f-row">
-              <label><span class="en">Date</span><span class="ja">希望日</span></label>
-              <input type="date" id="fDate">
-            </div>
-            <div class="f-row">
-              <label><span class="en">Anglers</span><span class="ja">人数</span></label>
-              <select id="fPax" onchange="calcPrice()">
-                <option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option>
-              </select>
-            </div>
-          </div>
-          <div class="f-2 bookOnly">
-            <div class="f-row">
-              <label><span class="en">Rental tackle</span><span class="ja">レンタル</span></label>
-              <select id="fRental" onchange="calcPrice()">
-                <option value="0"><span>No — I bring my own</span></option>
-                <option value="1">1 set (+¥2,000)</option>
-                <option value="2">2 sets (+¥4,000)</option>
-                <option value="3">3 sets (+¥6,000)</option>
-                <option value="4">4 sets (+¥8,000)</option>
-              </select>
-            </div>
-            <div class="f-row">
-              <label><span class="en">Experience</span><span class="ja">経験</span></label>
-              <select id="fExp">
-                <option value="first">First time / 初めて</option>
-                <option value="some">Some experience / 経験あり</option>
-                <option value="pro">Experienced / ベテラン</option>
-              </select>
-            </div>
-          </div>
-          <div class="f-row">
-            <label><span class="en">Name</span><span class="ja">お名前</span></label>
-            <input type="text" id="fName" placeholder="John Angler" required>
-          </div>
-          <div class="f-2">
-            <div class="f-row">
-              <label><span class="en">Email</span><span class="ja">メール</span></label>
-              <input type="email" id="fMail" placeholder="you@example.com" required>
-            </div>
-            <div class="f-row">
-              <label>WhatsApp / LINE</label>
-              <input type="text" id="fChat" placeholder="+81 90-XXXX-XXXX">
-            </div>
-          </div>
-          <div class="f-row" id="msgRow" style="display:none">
-            <label><span class="en">Your question</span><span class="ja">ご質問</span></label>
-            <textarea id="fMsg" rows="4" placeholder="Ask us anything — species, seasons, what to bring…"></textarea>
-          </div>
-          <div class="f-price bookOnly">
-            <div>
-              <span class="en">Estimated total</span><span class="ja">概算合計</span>
-              <span class="dep"><span class="en">30% deposit due now: <b id="depAmt">¥7,800</b></span><span class="ja">今回のデポジット(30%): <b id="depAmtJa">¥7,800</b></span></span>
-            </div>
-            <div class="total" id="totAmt">¥26,000</div>
-          </div>
-          <button class="f-submit" type="submit" id="submitBtn"><span class="en">Request Booking →</span><span class="ja">予約リクエスト →</span></button>
-          <p class="f-note"><span class="en">No charge until we confirm availability. Free cancellation until 7 days before departure.</span><span class="ja">空き確認まで請求は発生しません。出船7日前までキャンセル無料。</span></p>
-        </form>
-      </div>
-      <div class="book-side rv">
-        <h3><span class="en">📅 Live availability</span><span class="ja">📅 空き状況カレンダー</span></h3>
-        <div class="avail">
-          <iframe src="https://calendar.google.com/calendar/embed?height=340&wkst=1&ctz=Asia%2FTokyo&showPrint=0&showCalendars=0&showTz=0&showTitle=0&src=YjczY2E1YTU1YmM5NTBlMTRhODEyNzA0OWUzODRkNzFlMDEzZTFjM2NkNjdkZWY3NGVlNDVkODQ0YjBhMzZhNkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=ZWRkOTNiYzg3NDVkYTExMTI1NTEyN2U1ZGQ0NzEyOTIwNzg3N2Q0ZmRiY2VlNjQ1YmRiZDU5N2YyYTY1OWMzNEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=ZGUzN2M5NzU0ZmRhYTcwMmVlZTVmZTk0Y2I5ZDI2YTU0NWZjMWU5Njc1YjhjZDFlZTYwYmY2NGIzOGI1ZmMzZkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%233f51b5&color=%23e4c441&color=%230b8043" loading="lazy" title="Taninomaru availability calendar"></iframe>
-          <p class="avail-cap"><span class="en">The captains' real trip calendar (Japanese). Marked dates = trips already scheduled — you can often join. Blank dates = open for requests.</span><span class="ja">船長の実際の出船カレンダー。予定がある日は乗合参加できる場合があります。空欄の日はリクエスト可。</span></p>
         </div>
-        <h3><span class="en">⚡ Prefer instant chat?</span><span class="ja">⚡ 直接連絡したい方</span></h3>
-        <div class="contact-quick">
-          <a class="cq" href="https://www.instagram.com/taninomaru_/" target="_blank" rel="noopener">
-            <span class="ci ig-ico">📷</span>
-            <span>Instagram DM<small><span class="en">Fastest reply — message @taninomaru_</span><span class="ja">最速返信 — @taninomaru_ へDM</span></small></span>
-          </a>
-          <a class="cq" href="tel:+818014964938">
-            <span class="ci" style="background:var(--indigo)">📞</span>
-            <span>080-1496-4938<small><span class="en">Phone (Japanese) · 9:00–19:00 JST</span><span class="ja">お電話（日本語）9:00〜19:00</span></small></span>
-          </a>
-          <a class="cq" href="https://taninomaru.com/" target="_blank" rel="noopener">
-            <span class="ci" style="background:var(--gold);color:var(--deep)">🌐</span>
-            <span>taninomaru.com<small><span class="en">Official site (Japanese)</span><span class="ja">公式サイト（日本語）</span></small></span>
-          </a>
+        <div class="f-row bookOnly">
+          <label><span class="en">Rental tackle (+¥2,000 / set)</span><span class="ja">レンタルタックル（+¥2,000/組）</span></label>
+          <select id="fRental" onchange="calcPrice()">
+            <option value="0" data-en="None — I bring my own" data-ja="不要（持参する）">None — I bring my own</option>
+            <option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option>
+          </select>
         </div>
+        <div class="f-row">
+          <label><span class="en">Name</span><span class="ja">お名前</span></label>
+          <input type="text" id="fName" placeholder="John Angler" required>
+        </div>
+        <div class="f-row">
+          <label>Email</label>
+          <input type="email" id="fMail" placeholder="you@example.com" required>
+        </div>
+        <div class="f-row" id="msgRow" style="display:none">
+          <label><span class="en">Your question</span><span class="ja">ご質問</span></label>
+          <textarea id="fMsg" rows="4" placeholder="Ask us anything — species, seasons, what to bring…"></textarea>
+        </div>
+        <div class="f-price bookOnly">
+          <div class="row"><span class="en">Trip total</span><span class="ja">合計金額</span><span class="n" id="totAmt">¥26,000</span></div>
+          <div class="row tot"><span class="en">Pay today</span><span class="ja">今回のお支払い</span><span class="n" id="dueNow">¥7,800</span></div>
+        </div>
+        <div class="pay-opts bookOnly">
+          <button type="button" class="pay-opt active" id="optDep" onclick="setPay('dep')">
+            <span class="tick">✓</span>
+            <span class="en">30% deposit now<br>rest on board</span><span class="ja">予約金30%<br>残額は当日</span>
+            <span class="amt" id="depOptAmt">¥7,800</span>
+          </button>
+          <button type="button" class="pay-opt" id="optFull" onclick="setPay('full')">
+            <span class="tick">✓</span>
+            <span class="en">Pay in full now<br>nothing on the day</span><span class="ja">全額前払い<br>当日支払いなし</span>
+            <span class="amt" id="fullOptAmt">¥26,000</span>
+          </button>
+        </div>
+        <button class="f-submit" type="submit"><span class="en" id="submitEn">Request to Book →</span><span class="ja">予約リクエスト →</span></button>
+        <p class="f-note"><span class="en">💳 Secure card payment via Stripe. No charge until the captain confirms your date.</span><span class="ja">💳 Stripeによる安全なカード決済。船長の確定連絡まで請求されません。</span></p>
+      </form>
+      <ul class="trust-mini">
+        <li><i class="tick">✓</i><span class="en">Free cancellation until 7 days before departure</span><span class="ja">出船7日前までキャンセル無料</span></li>
+        <li><i class="tick">✓</i><span class="en">Weather cancellation = full refund or free date change</span><span class="ja">悪天候欠航は全額返金 or 日程変更</span></li>
+        <li><i class="tick">✓</i><span class="en">Confirmation reply within 24 hours</span><span class="ja">24時間以内に確定連絡</span></li>
+      </ul>
+      <div class="quick">
+        <a href="https://www.instagram.com/taninomaru_/" target="_blank" rel="noopener">📷 DM</a>
+        <a href="tel:+818014964938">📞 <span class="en">Call</span><span class="ja">電話</span></a>
       </div>
     </div>
-  </div>
-</section>
+  </aside>
 
-<!-- ============ ACCESS ============ -->
-<section class="sec access" id="access">
-  <div class="wrap">
-    <div class="sec-head rv">
-      <span class="kicker"><span class="en">Getting here</span><span class="ja">アクセス</span></span>
-      <h2 class="disp"><span class="en block">Closer than you think.</span><span class="ja block">意外と近い、御坊・塩屋港。</span></h2>
-    </div>
-    <div class="acc-grid">
-      <div class="acc-map rv">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d468578.99091784906!2d134.98570980858221!3d33.901474784029205!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6007690eaffe5ea3%3A0x34ad6c6ec3eab4cf!2z6Yej44KK6Ii5IOiwt-mHjuS4uA!5e1!3m2!1sja!2sjp!4v1752739745880!5m2!1sja!2sjp" loading="lazy" title="Map to Taninomaru, Shioya Port, Gobo, Wakayama" allowfullscreen></iframe>
-      </div>
-      <div class="acc-items rv">
-        <div class="acc-item">
-          <span class="acc-ico">📍</span>
-          <div><h3><span class="en">Meeting point</span><span class="ja">集合場所</span></h3>
-          <p><span class="en">Shioya Port — Minami-Shioya, Shioya-cho, Gobo City, Wakayama. Free parking right at the dock. <a href="https://maps.app.goo.gl/ipDWvaUFaD1TtS5bA" target="_blank" rel="noopener" style="color:var(--gold);text-decoration:underline">Open in Google Maps</a></span><span class="ja">和歌山県御坊市塩屋町南塩屋・塩屋漁港。港に無料駐車場あり。<a href="https://maps.app.goo.gl/ipDWvaUFaD1TtS5bA" target="_blank" rel="noopener" style="color:var(--gold);text-decoration:underline">Googleマップで開く</a></span></p></div>
-        </div>
-        <div class="acc-item">
-          <span class="acc-ico">✈️</span>
-          <div><h3><span class="en">From Kansai Int'l Airport (KIX)</span><span class="ja">関西空港から</span></h3>
-          <p><span class="en">~90 min by rental car via Hanwa Expressway, exit Gobo IC, then 6 km to the port. The easiest option for visitors.</span><span class="ja">阪和道経由で約90分、御坊ICから6km。レンタカーが便利です。</span></p></div>
-        </div>
-        <div class="acc-item">
-          <span class="acc-ico">🚄</span>
-          <div><h3><span class="en">By train</span><span class="ja">電車で</span></h3>
-          <p><span class="en">JR Kinokuni Line to Gobo Station (limited express "Kuroshio" from Shin-Osaka ~80 min), then a 10-min taxi to the port.</span><span class="ja">JR御坊駅（新大阪から特急くろしお約80分）からタクシー約10分。</span></p></div>
-        </div>
-        <div class="acc-item">
-          <span class="acc-ico">🏨</span>
-          <div><h3><span class="en">Early start? Stay near</span><span class="ja">前泊もおすすめ</span></h3>
-          <p><span class="en">Morning trips leave around 5 AM. Business hotels in Gobo city center are ~10 min from the dock — or combine with a Shirahama onsen trip (45 min south).</span><span class="ja">朝便は5時前後出船。御坊市街のホテルから約10分。白浜温泉との組み合わせも◎。</span></p></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+  <!-- ===== main column ===== -->
+  <div class="col-main">
 
-<!-- ============ FAQ ============ -->
-<section class="sec faq" id="faq">
-  <div class="wrap">
-    <div class="sec-head rv">
-      <span class="kicker">FAQ</span>
-      <h2 class="disp"><span class="en block">Before you ask.</span><span class="ja block">よくある質問</span></h2>
+    <!-- amenities -->
+    <div class="secb rv">
+      <h2><span class="en">What's on board</span><span class="ja">船の設備</span></h2>
+      <p class="sub"><span class="en">16-meter, 8-ton charter boat — big, stable and comfortable. Up to 12 anglers.</span><span class="ja">全長16m・8トンの大型船。ゆったり快適、最大12名まで。</span></p>
+      <div class="amen">
+        <span><i class="tick">✓</i><span class="en">Toilet</span><span class="ja">トイレ</span></span>
+        <span><i class="tick">✓</i><span class="en">Cabin</span><span class="ja">キャビン</span></span>
+        <span><i class="tick">✓</i><span class="en">Fridge &amp; freezer</span><span class="ja">冷蔵・冷凍庫</span></span>
+        <span><i class="tick">✓</i><span class="en">Microwave</span><span class="ja">電子レンジ</span></span>
+        <span><i class="tick">✓</i><span class="en">Hot water pot</span><span class="ja">ポット（お湯）</span></span>
+        <span><i class="tick">✓</i><span class="en">Power at each seat</span><span class="ja">各席電源(12V/100V)</span></span>
+        <span><i class="tick">✓</i><span class="en">Live well</span><span class="ja">イケス</span></span>
+        <span><i class="tick">✓</i><span class="en">Life jackets</span><span class="ja">ライフジャケット</span></span>
+        <span><i class="tick">✓</i><span class="en">Free parking</span><span class="ja">無料駐車場</span></span>
+      </div>
+      <div class="caps">
+        <div class="cap-card">
+          <img src="assets/catch-yellowfin-tuna.jpg" alt="Captain Koki">
+          <div>
+            <span class="role"><span class="en">Boat 1 · Lure</span><span class="ja">1号船・ルアー</span></span>
+            <h3><span class="en">Captain Koki</span><span class="ja">こうき船長</span></h3>
+            <p><span class="en">Casting, jigging, SLJ, tairaba, tip-run, ika-metal. Young, fired-up, posts the catches daily.</span><span class="ja">キャスティング・ジギング・SLJ・タイラバ・ティップラン・イカメタル担当。</span></p>
+          </div>
+        </div>
+        <div class="cap-card">
+          <img src="assets/captain-senior-boat.jpg" alt="Senior captain">
+          <div>
+            <span class="role"><span class="en">Boat 2 · Bait</span><span class="ja">2号船・エサ釣り</span></span>
+            <h3><span class="en">The Senior Captain</span><span class="ja">大船長</span></h3>
+            <p><span class="en">Isaki, big night aji, drop-shot live bait — decades of Kii Channel knowledge.</span><span class="ja">イサキ・大アジ・落とし込み。紀伊水道を知り尽くしたベテラン。</span></p>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="faq-list rv">
+
+    <!-- trips -->
+    <div class="secb rv" id="trips">
+      <h2><span class="en">Trips &amp; prices</span><span class="ja">プラン・料金</span></h2>
+      <p class="sub"><span class="en">Shared-boat price per angler, ice included. Private charter for groups — ask us.</span><span class="ja">乗合・お一人様料金、氷込み。貸切（仕立て）はご相談ください。</span></p>
+
+      <div class="tripcard">
+        <div class="timg"><img src="assets/catch-sawara-wide.jpg" alt="Sawara casting catch"><span class="season"><span class="en">Autumn–Spring</span><span class="ja">秋〜春</span></span></div>
+        <div class="tbody">
+          <h3><span class="en">Sawara Casting</span><span class="ja">サワラキャスティング</span></h3>
+          <p class="desc"><span class="en">Chase boiling schools of Spanish mackerel with topwater and blades. Explosive strikes.</span><span class="ja">ナブラ撃ちで爆発的バイト。午前・午後の半日便。</span></p>
+          <div class="tmeta"><span class="tm">7:00–12:00 / 12:00–17:00</span><span class="tm"><span class="en">Lure</span><span class="ja">ルアー</span></span></div>
+        </div>
+        <div class="tside"><div class="price">¥13,000<small><span class="en">per angler</span><span class="ja">お一人様</span></small></div><button class="trip-book" onclick="pickPlan('sawara')"><span class="en">Select</span><span class="ja">選択</span></button></div>
+      </div>
+
+      <div class="tripcard">
+        <div class="timg"><img src="assets/plan-madai.jpg" alt="Red sea bream"><span class="season"><span class="en">All year</span><span class="ja">通年</span></span></div>
+        <div class="tbody">
+          <h3><span class="en">Morning Lure — SLJ · Tairaba · Jigging</span><span class="ja">朝便ルアー（SLJ・タイラバ・ジギング）</span></h3>
+          <p class="desc"><span class="en">The classic mixed bag: sea bream, amberjack, grouper. Best all-rounder for first-timers.</span><span class="ja">マダイ・青物・根魚の五目。初挑戦にもおすすめ。</span></p>
+          <div class="tmeta"><span class="tm">~5:00 <span class="en">dep.</span><span class="ja">出船</span></span><span class="tm"><span class="en">Beginner best</span><span class="ja">初心者◎</span></span></div>
+        </div>
+        <div class="tside"><div class="price">¥13,000<small><span class="en">per angler</span><span class="ja">お一人様</span></small></div><button class="trip-book" onclick="pickPlan('lure-am')"><span class="en">Select</span><span class="ja">選択</span></button></div>
+      </div>
+
+      <div class="tripcard">
+        <div class="timg"><img src="assets/hero-squid-sunset.jpg" alt="Night squid at sunset"><span class="season"><span class="en">Summer nights</span><span class="ja">夏・夜</span></span></div>
+        <div class="tbody">
+          <h3><span class="en">Night Squid — Akaika (Ika-metal)</span><span class="ja">アカイカ夜焚き（イカメタル）</span></h3>
+          <p class="desc"><span class="en">Fish under deck lights on a warm night. Sweet squid by the tray-full — super photogenic.</span><span class="ja">漁火の下で数釣り。ファミリーにも人気の名物プラン。</span></p>
+          <div class="tmeta"><span class="tm">~17:00–22:00</span><span class="tm"><span class="en">Jun–Sep</span><span class="ja">6〜9月</span></span></div>
+        </div>
+        <div class="tside"><div class="price">¥13,000<small><span class="en">per angler</span><span class="ja">お一人様</span></small></div><button class="trip-book" onclick="pickPlan('squid')"><span class="en">Select</span><span class="ja">選択</span></button></div>
+      </div>
+
+      <div class="tripcard">
+        <div class="timg"><img src="assets/plan-hiramasa.jpg" alt="Amberjack on deck"><span class="season"><span class="en">All year</span><span class="ja">通年</span></span></div>
+        <div class="tbody">
+          <h3><span class="en">Afternoon Jigging</span><span class="ja">午後便ジギング</span></h3>
+          <p class="desc"><span class="en">Sleep in, then fight amberjack and bottom fish all afternoon. Pairs well with sightseeing.</span><span class="ja">午後からゆっくり出船。観光との組み合わせも◎。</span></p>
+          <div class="tmeta"><span class="tm">12:00–</span><span class="tm"><span class="en">Lure</span><span class="ja">ルアー</span></span></div>
+        </div>
+        <div class="tside"><div class="price">¥12,000<small><span class="en">per angler</span><span class="ja">お一人様</span></small></div><button class="trip-book" onclick="pickPlan('jig-pm')"><span class="en">Select</span><span class="ja">選択</span></button></div>
+      </div>
+
+      <div class="tripcard">
+        <div class="timg"><img src="assets/squid-tray.jpg" alt="Aori squid tray"><span class="season"><span class="en">Autumn</span><span class="ja">秋</span></span></div>
+        <div class="tbody">
+          <h3><span class="en">Tip-Run Aori Squid</span><span class="ja">ティップラン（アオリイカ）</span></h3>
+          <p class="desc"><span class="en">Finesse fishing for the "king of squid" — sashimi-grade, straight from the live well.</span><span class="ja">イカの王様を夕方便で。釣りたては刺身で絶品。</span></p>
+          <div class="tmeta"><span class="tm">16:00–21:00</span><span class="tm"><span class="en">Lure</span><span class="ja">ルアー</span></span></div>
+        </div>
+        <div class="tside"><div class="price">¥12,000<small><span class="en">per angler</span><span class="ja">お一人様</span></small></div><button class="trip-book" onclick="pickPlan('tiprun')"><span class="en">Select</span><span class="ja">選択</span></button></div>
+      </div>
+
+      <div class="tripcard">
+        <div class="timg"><img src="assets/plan-isaki.jpg" alt="Isaki catch"><span class="season"><span class="en">All year</span><span class="ja">通年</span></span></div>
+        <div class="tbody">
+          <h3><span class="en">Bait Fishing with the Senior Captain</span><span class="ja">エサ釣り便（2号船）</span></h3>
+          <p class="desc"><span class="en">Isaki, big night aji (40cm+), drop-shot live bait for kanpachi — old-school and deadly effective.</span><span class="ja">イサキ・大アジ・落とし込みノマセをじっくり。</span></p>
+          <div class="tmeta"><span class="tm"><span class="en">Morning / Night</span><span class="ja">朝便・夜便</span></span><span class="tm"><span class="en">Bait</span><span class="ja">エサ</span></span></div>
+        </div>
+        <div class="tside"><div class="price">¥12–13,000<small><span class="en">per angler</span><span class="ja">お一人様</span></small></div><button class="trip-book" onclick="pickPlan('bait')"><span class="en">Select</span><span class="ja">選択</span></button></div>
+      </div>
+
+      <div class="trip-note"><span class="en"><b>Good to know:</b> shared trips sail from 2 anglers · rental rod &amp; reel ¥2,000/set · bring food &amp; drinks (fridge, microwave, hot water on board) · exact times confirmed at booking.</span><span class="ja"><b>ご案内:</b> 乗合は2名様から出船 · レンタル一式¥2,000 · 飲食物は持ち込み（冷蔵庫・レンジ・ポットあり） · 出船時間は予約時に確定します。</span></div>
+    </div>
+
+    <!-- availability -->
+    <div class="secb rv" id="avail">
+      <h2><span class="en">Availability</span><span class="ja">空き状況</span></h2>
+      <p class="sub"><span class="en">Live from the captains' trip calendar. Tap a date to see the slots.</span><span class="ja">船長の出船カレンダーと連動。日付をタップすると枠が見られます。</span></p>
+      <div class="cal-head">
+        <button class="cal-nav" id="calPrev" onclick="calMove(-1)">‹</button>
+        <div class="cal-title" id="calTitle"></div>
+        <button class="cal-nav" id="calNext" onclick="calMove(1)">›</button>
+      </div>
+      <div class="cal-dow" id="calDow"></div>
+      <div class="cal-grid" id="calGrid"></div>
+      <div class="cal-legend">
+        <span><i class="dot open"></i><span class="en">Trip scheduled — seats open, join in!</span><span class="ja">出船予定あり・空きあり（乗合OK）</span></span>
+        <span><i class="dot full"></i><span class="en">Full</span><span class="ja">満船</span></span>
+        <span><i class="dot note"></i><span class="en">Charter / see details</span><span class="ja">チャーター等</span></span>
+        <span style="color:#8091a3"><span class="en">Blank = open to your request</span><span class="ja">空欄＝リクエスト可</span></span>
+      </div>
+      <div class="cal-detail" id="calDetail">
+        <p style="font-size:.82rem;color:#8091a3"><span class="en">👆 Select a date above to see morning / afternoon / night slots.</span><span class="ja">👆 日付を選ぶと午前・午後・夜の枠が表示されます。</span></p>
+      </div>
+      <p class="cal-asof" id="calAsof"></p>
+    </div>
+
+    <!-- gallery -->
+    <div class="secb rv" id="gallery">
+      <h2><span class="en">Catch gallery</span><span class="ja">釣果ギャラリー</span></h2>
+      <p class="sub"><span class="en">Real guests, real fish — straight from our Instagram.</span><span class="ja">すべて実際のお客様の釣果写真です。</span></p>
+      <div class="gal-grid">
+        <div class="g tall"><img src="assets/squid-sunset.jpg" alt="Sunset akaika squid" loading="lazy"></div>
+        <div class="g wide"><img src="assets/catch-yellowfin-tuna.jpg" alt="Yellowfin tuna" loading="lazy"></div>
+        <div class="g"><img src="assets/guests-madai-board.jpg" alt="Guests with madai and 谷野丸 board" loading="lazy"></div>
+        <div class="g"><img src="assets/night-squid-woman.jpg" alt="Guest with night squid" loading="lazy"></div>
+        <div class="g"><img src="assets/catch-grouper.jpg" alt="Grouper on a jig" loading="lazy"></div>
+        <div class="g tall"><img src="assets/squid-haul-guests.jpg" alt="Guests with squid haul" loading="lazy"></div>
+        <div class="g"><img src="assets/catch-amberjack-wide.jpg" alt="Amberjack" loading="lazy"></div>
+        <div class="g"><img src="assets/night-squid-guests.jpg" alt="Night squid haul" loading="lazy"></div>
+        <div class="g"><img src="assets/catch-tachiuo.jpg" alt="Hairtail at night" loading="lazy"></div>
+        <div class="g"><img src="assets/plan-night-group.jpg" alt="Group night trip" loading="lazy"></div>
+      </div>
+      <div class="social-cards">
+        <a class="social-card" href="https://www.instagram.com/taninomaru_/" target="_blank" rel="noopener">
+          <span class="social-ico ig-bg">📷</span>
+          <span><h3>@taninomaru_</h3><p><span class="en">Daily catch reports on Instagram</span><span class="ja">Instagramでほぼ毎日釣果更新中</span></p></span>
+          <span class="arrow">→</span>
+        </a>
+        <a class="social-card" href="https://www.tiktok.com/@taninomaru123456" target="_blank" rel="noopener">
+          <span class="social-ico tt-bg">🎬</span>
+          <span><h3>TikTok</h3><p><span class="en">Strikes, fights &amp; squid nights on video</span><span class="ja">ヒットシーン・夜焚き動画を公開中</span></p></span>
+          <span class="arrow">→</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- reviews -->
+    <div class="secb rv" id="reviews">
+      <h2><span class="en">What guests say</span><span class="ja">お客様の評価</span></h2>
+      <div class="rev-grid">
+        <div class="rev-score">
+          <div class="n">5.0</div>
+          <span class="stars">★★★★★</span>
+          <small><span class="en">on Japan's largest charter booking site</span><span class="ja">大手釣船予約サイト評価</span></small>
+        </div>
+        <div class="rev-points">
+          <span><i class="tick">✓</i><span class="en">Guests praise the coaching for beginners and first catches</span><span class="ja">初心者への丁寧なサポートが好評</span></span>
+          <span><i class="tick">✓</i><span class="en">Repeat anglers come back for the night-squid season every year</span><span class="ja">夜焚きイカは毎年リピーター多数</span></span>
+          <span><i class="tick">✓</i><span class="en">Clean, spacious boat with real toilet — families welcome</span><span class="ja">広くて清潔な船内・トイレ完備でファミリーも安心</span></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- faq -->
+    <div class="secb rv" id="faq">
+      <h2>FAQ</h2>
       <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)"><span class="en">I've never fished before. Can I really join?</span><span class="ja">釣りが初めてでも大丈夫？</span></button>
-        <div class="faq-a"><p><span class="en">Absolutely — "beginners very welcome" is literally our motto. The captain and crew will rig your tackle, show you the technique, and even unhook your fish. Many of our happiest photos are first-timers.</span><span class="ja">もちろんです。「初心者大歓迎」がモットー。仕掛けのセットから釣り方、魚の外し方までスタッフがサポートします。</span></p></div></div>
+        <div class="faq-a"><p><span class="en">Absolutely — "beginners very welcome" is the house motto. The crew rigs your tackle, shows you the technique, and unhooks your fish. Many of our happiest photos are first-timers.</span><span class="ja">もちろんです。「初心者大歓迎」がモットー。仕掛けのセットから釣り方まで丁寧にサポートします。</span></p></div></div>
       <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)"><span class="en">Do I need a fishing license in Japan?</span><span class="ja">釣りのライセンスは必要？</span></button>
         <div class="faq-a"><p><span class="en">No license is required for recreational boat fishing in Japan. Just book, board, and fish.</span><span class="ja">日本では遊漁船での釣りに免許は不要です。</span></p></div></div>
       <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)"><span class="en">What should I bring?</span><span class="ja">持ち物は？</span></button>
-        <div class="faq-a"><p><span class="en">Sunscreen, hat, sunglasses, rain jacket, food &amp; drinks (fridge/microwave/hot water on board), and a cooler or bag for your catch — we provide the ice free. Seasickness medicine the night before + morning of is strongly recommended. Rods, reels and life jackets can all be rented.</span><span class="ja">日焼け対策、雨具、飲食物（船内に冷蔵庫・レンジあり）、釣った魚を持ち帰るクーラー。氷は無料です。酔い止めは前夜と当日朝の服用がおすすめ。</span></p></div></div>
+        <div class="faq-a"><p><span class="en">Sunscreen, hat, rain jacket, food &amp; drinks, and a cooler bag for your catch — ice is free. Seasickness medicine the night before + morning of is strongly recommended. Rods, reels and life jackets can be rented.</span><span class="ja">日焼け対策・雨具・飲食物・クーラー。氷は無料です。酔い止めは前夜と当日朝の服用がおすすめ。</span></p></div></div>
       <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)"><span class="en">How do payments work?</span><span class="ja">支払い方法は？</span></button>
-        <div class="faq-a"><p><span class="en">A 30% deposit by card secures your booking (this demo simulates Stripe). The balance is settled on board — cash, credit cards (VISA/JCB/AMEX) and QR payments like PayPay are all accepted.</span><span class="ja">予約時にカードで30%のデポジット（本デモではStripe決済を模擬）、残額は当日精算。現金・クレジットカード・QR決済に対応しています。</span></p></div></div>
+        <div class="faq-a"><p><span class="en">Choose at checkout: a 30% deposit by card (rest on board — cash, card or QR), or pay the full amount by card up front. Card payments are processed by Stripe (simulated in this demo).</span><span class="ja">予約時に「予約金30%」か「全額前払い」を選択。カード決済はStripe（本デモでは模擬）。残額がある場合は当日、現金・カード・QRで精算できます。</span></p></div></div>
       <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)"><span class="en">What if the weather turns bad?</span><span class="ja">悪天候の場合は？</span></button>
-        <div class="faq-a"><p><span class="en">Safety first: if the captain cancels for weather, you get a full refund of your deposit or a free date change — your choice.</span><span class="ja">船長判断で欠航の場合、デポジットは全額返金または日程変更を選べます。</span></p></div></div>
+        <div class="faq-a"><p><span class="en">Safety first: if the captain cancels for weather, you get a full refund or a free date change — your choice.</span><span class="ja">船長判断で欠航の場合、全額返金または日程変更を選べます。</span></p></div></div>
       <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)"><span class="en">What is the cancellation policy?</span><span class="ja">キャンセル規定は？</span></button>
-        <div class="faq-a"><p><span class="en">Free until 7 days before departure. Within 7 days: 50% fee. Within 3 days: 100% fee. Weather cancellations by the captain are always free.</span><span class="ja">7日前まで無料、7日前〜50%、3日前〜100%。天候による欠航は無料です。</span></p></div></div>
+        <div class="faq-a"><p><span class="en">Free until 7 days before departure. Within 7 days: 50% fee. Within 3 days: 100% fee. Weather cancellations by the captain are always free.</span><span class="ja">7日前まで無料、7日前〜50%、3日前〜100%。天候欠航は無料です。</span></p></div></div>
       <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)"><span class="en">Can we charter the whole boat?</span><span class="ja">貸切（仕立て）はできる？</span></button>
-        <div class="faq-a"><p><span class="en">Yes — groups can book the boat privately, and with two boats we can host larger parties too. Send a request with "Private Charter" selected and we'll quote you.</span><span class="ja">可能です。二隻体制なので大人数にも対応。フォームで「Private Charter」を選んでご相談ください。</span></p></div></div>
+        <div class="faq-a"><p><span class="en">Yes — with two boats we can host big groups too. Select "Private Charter" in the form and we'll quote you.</span><span class="ja">可能です。二隻体制なので大人数もOK。フォームで「Private Charter」を選んでご相談ください。</span></p></div></div>
       <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)"><span class="en">Can I keep and eat my catch?</span><span class="ja">釣った魚は食べられる？</span></button>
-        <div class="faq-a"><p><span class="en">Yes! Everything you catch is yours. Ice is provided; bring a cooler bag. Some hotels and local restaurants in Wakayama will cook your catch — ask us for recommendations when you book.</span><span class="ja">もちろん全部お持ち帰りOK。氷は船で用意します。釣果を調理してくれる周辺の飲食店もご紹介できます。</span></p></div></div>
+        <div class="faq-a"><p><span class="en">Yes! Everything you catch is yours — ice provided. Some local restaurants will cook your catch; ask us for tips when you book.</span><span class="ja">もちろん全部お持ち帰りOK。釣果を調理してくれる周辺の飲食店もご紹介できます。</span></p></div></div>
     </div>
-  </div>
-</section>
+
+    <!-- access -->
+    <div class="secb rv" id="access">
+      <h2><span class="en">Getting here</span><span class="ja">アクセス</span></h2>
+      <p class="sub"><span class="en">Shioya Port — Minami-Shioya, Shioya-cho, Gobo City, Wakayama</span><span class="ja">和歌山県御坊市塩屋町南塩屋・塩屋漁港</span></p>
+      <div class="acc-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d468578.99091784906!2d134.98570980858221!3d33.901474784029205!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6007690eaffe5ea3%3A0x34ad6c6ec3eab4cf!2z6Yej44KK6Ii5IOiwt-mHjuS4uA!5e1!3m2!1sja!2sjp!4v1752739745880!5m2!1sja!2sjp" loading="lazy" title="Map to 谷野丸, Shioya Port, Gobo, Wakayama" allowfullscreen></iframe>
+      </div>
+      <div class="acc-items">
+        <div class="acc-item"><span class="acc-ico">✈️</span><div><h3><span class="en">From KIX airport</span><span class="ja">関西空港から</span></h3><p><span class="en">~90 min by car via Hanwa Expressway, exit Gobo IC, 6 km to port. <a href="https://maps.app.goo.gl/ipDWvaUFaD1TtS5bA" target="_blank" rel="noopener">Google Maps</a></p></span><span class="ja">阪和道で約90分、御坊ICから6km。<a href="https://maps.app.goo.gl/ipDWvaUFaD1TtS5bA" target="_blank" rel="noopener">Googleマップ</a></span></div></div>
+        <div class="acc-item"><span class="acc-ico">🚄</span><div><h3><span class="en">By train</span><span class="ja">電車で</span></h3><p><span class="en">JR "Kuroshio" express to Gobo Stn (~80 min from Shin-Osaka), 10-min taxi to port.</span><span class="ja">JR御坊駅（新大阪から特急くろしお約80分）→タクシー約10分。</span></p></div></div>
+        <div class="acc-item"><span class="acc-ico">🅿️</span><div><h3><span class="en">Parking</span><span class="ja">駐車場</span></h3><p><span class="en">Free parking right at the dock.</span><span class="ja">港に無料駐車場あり。</span></p></div></div>
+        <div class="acc-item"><span class="acc-ico">🏨</span><div><h3><span class="en">Early start?</span><span class="ja">前泊もおすすめ</span></h3><p><span class="en">Morning trips leave ~5 AM. Hotels in Gobo are ~10 min away; Shirahama onsen is 45 min south.</span><span class="ja">朝便は5時前後出船。御坊市街のホテルから約10分。白浜温泉も45分。</span></p></div></div>
+      </div>
+    </div>
+
+  </div><!-- /col-main -->
+</div><!-- /main-grid -->
 
 <!-- ============ FOOTER ============ -->
 <footer>
   <div class="wrap">
     <div class="foot-grid">
       <div>
-        <div class="foot-brand"><img src="assets/mascot-squid.png" alt=""><span class="bt">TANINOMARU</span></div>
-        <p><span class="en">Family-run sport fishing charter at Shioya Port, Gobo City, Wakayama, Japan. Two boats, two generations, one obsession: putting you on fish.</span><span class="ja">和歌山県御坊市塩屋港の親子二代・二隻体制の遊漁船。</span></p>
+        <div class="foot-brand"><img src="assets/mascot-squid.png" alt=""><span><span class="bt">谷野丸</span><span class="bs">Taninomaru Charter</span></span></div>
+        <p><span class="en">Family-run fishing charter at Shioya Port, Gobo City, Wakayama, Japan. Two boats, two generations, one obsession: putting you on fish.</span><span class="ja">和歌山県御坊市塩屋港の親子二代・二隻体制の遊漁船。</span></p>
       </div>
       <div>
         <h4><span class="en">Contact</span><span class="ja">連絡先</span></h4>
         <a href="tel:+818014964938">📞 080-1496-4938 (9:00–19:00 JST)</a>
         <a href="https://www.instagram.com/taninomaru_/" target="_blank" rel="noopener">📷 Instagram @taninomaru_</a>
         <a href="https://www.tiktok.com/@taninomaru123456" target="_blank" rel="noopener">🎬 TikTok</a>
-        <a href="https://taninomaru.com/" target="_blank" rel="noopener">🌐 taninomaru.com (JP)</a>
+        <a><span style="opacity:.6">💬 WhatsApp — <span class="en">coming soon</span><span class="ja">準備中</span></span></a>
       </div>
       <div>
         <h4><span class="en">Quick links</span><span class="ja">リンク</span></h4>
         <a href="#trips"><span class="en">Trips &amp; Prices</span><span class="ja">プラン・料金</span></a>
+        <a href="#avail"><span class="en">Availability</span><span class="ja">空き状況</span></a>
         <a href="#book"><span class="en">Booking</span><span class="ja">予約</span></a>
         <a href="#access"><span class="en">Access</span><span class="ja">アクセス</span></a>
-        <a href="#faq">FAQ</a>
       </div>
     </div>
     <div class="demo-note">
-      <span class="en">⚠️ DEMO SITE — This is a design demonstration built for Taninomaru using photos and information from their official website, Instagram and public listings (used with permission). The booking form and payment flow are simulations; no real reservations or charges are made. For actual bookings today, call 080-1496-4938 or DM @taninomaru_.</span>
-      <span class="ja">⚠️ 本サイトはデモです。写真・情報はたにの丸の公式サイト・Instagram・公開情報より許可を得て使用しています。予約フォーム・決済はシミュレーションであり、実際の予約・課金は発生しません。実際のご予約は 080-1496-4938 または Instagram DM へ。</span>
+      <span class="en">⚠️ DEMO SITE — Built for 谷野丸 (Taninomaru) using photos and information from their official channels and public listings, with permission. The booking form and payment flow are simulations; no real reservations or charges are made. For actual bookings today, call 080-1496-4938 or DM @taninomaru_.</span>
+      <span class="ja">⚠️ 本サイトはデモです。写真・情報は谷野丸の公式チャンネル・公開情報より許可を得て使用しています。予約フォーム・決済はシミュレーションであり、実際の予約・課金は発生しません。実際のご予約は 080-1496-4938 または Instagram DM へ。</span>
     </div>
   </div>
 </footer>
 
-<!-- sticky mobile CTA -->
+<!-- sticky mobile bar -->
 <div class="sticky-cta">
-  <a class="s2" href="tel:+818014964938">📞 <span class="en">Call</span><span class="ja">電話</span></a>
-  <a class="s1" href="#book"><span class="en">Book Now — from ¥12,000</span><span class="ja">予約する — ¥12,000〜</span></a>
+  <div class="sp"><span class="n">¥12,000〜</span><small><span class="en">per angler · ★5.0</span><span class="ja">お一人様 · ★5.0</span></small></div>
+  <a class="go" href="#book" onclick="goBook(event)"><span class="en">Check availability &amp; book</span><span class="ja">空きを見て予約する</span></a>
 </div>
 
 <!-- payment modal -->
@@ -744,12 +746,12 @@ footer p{font-size:.82rem}
   <div class="modal">
     <button class="modal-close" onclick="closeModal('payModal')">✕</button>
     <span class="demo-badge">Demo — no real charge</span>
-    <h3><span class="en">Secure your booking</span><span class="ja">デポジットで予約を確定</span></h3>
-    <p class="msub"><span class="en">Pay a 30% deposit now. The rest is settled on board (cash, card or QR).</span><span class="ja">30%を今すぐ決済、残額は当日船上で（現金・カード・QR）。</span></p>
+    <h3><span class="en">Secure your booking</span><span class="ja">お支払いして予約を確定</span></h3>
+    <p class="msub" id="payModeMsg"></p>
     <div class="pay-sum" id="paySummary"></div>
     <div class="stripe-row"><span>💳 Card number</span><span>•••• •••• •••• 4242</span></div>
     <div class="stripe-row"><span>MM/YY · CVC</span><span>12/28 · •••</span></div>
-    <button class="f-submit" onclick="payDemo()"><span class="en" id="payBtnTxt">Pay deposit</span><span class="ja">デポジットを支払う</span></button>
+    <button class="f-submit" onclick="payDemo()" id="payBtn"></button>
     <p class="f-note">Powered by Stripe (simulated) · <span class="en">Refundable until 7 days before</span><span class="ja">7日前まで返金可</span></p>
   </div>
 </div>
@@ -765,93 +767,216 @@ footer p{font-size:.82rem}
   </div>
 </div>
 
+<script src="assets/availability.js"></script>
 <script>
-/* ===== i18n ===== */
-function toggleLang(){
-  document.body.classList.toggle('lang-ja');
-  document.getElementById('langBtn').textContent = document.body.classList.contains('lang-ja') ? 'English' : '日本語';
-  document.documentElement.lang = document.body.classList.contains('lang-ja') ? 'ja' : 'en';
+/* ================= i18n ================= */
+const PLANS=[
+  {v:'sawara',  p:13000, en:'Sawara Casting — ¥13,000',                    ja:'サワラキャスティング — ¥13,000'},
+  {v:'lure-am', p:13000, en:'Morning Lure (SLJ/Tairaba/Jigging) — ¥13,000', ja:'朝便ルアー（SLJ・タイラバ・ジギング）— ¥13,000'},
+  {v:'squid',   p:13000, en:'Night Squid — Akaika — ¥13,000',               ja:'アカイカ夜焚き（イカメタル）— ¥13,000'},
+  {v:'jig-pm',  p:12000, en:'Afternoon Jigging — ¥12,000',                  ja:'午後便ジギング — ¥12,000'},
+  {v:'tiprun',  p:12000, en:'Tip-Run Aori Squid — ¥12,000',                 ja:'ティップラン（アオリイカ）— ¥12,000'},
+  {v:'bait',    p:13000, en:'Bait Fishing (Boat 2) — ¥13,000',              ja:'エサ釣り便（2号船）— ¥13,000'},
+  {v:'charter', p:0,     en:'Private Charter — ask us',                     ja:'貸切（仕立て）— 要相談'}
+];
+function isJa(){return document.body.classList.contains('lang-ja')}
+function fillPlans(){
+  const sel=document.getElementById('fPlan');
+  const cur=sel.value;
+  sel.innerHTML='';
+  PLANS.forEach(pl=>{
+    const o=document.createElement('option');
+    o.value=pl.v;o.dataset.price=pl.p;o.textContent=isJa()?pl.ja:pl.en;
+    sel.appendChild(o);
+  });
+  if(cur)sel.value=cur;
+  if(!sel.value)sel.selectedIndex=0;
+}
+function setLang(lang){
+  document.body.classList.toggle('lang-ja',lang==='ja');
+  document.documentElement.lang=lang;
+  document.getElementById('segEn').classList.toggle('active',lang!=='ja');
+  document.getElementById('segJa').classList.toggle('active',lang==='ja');
+  try{localStorage.setItem('tani-lang',lang)}catch(e){}
+  // 動的テキストの再描画
+  const rentalNone=document.querySelector('#fRental option[value="0"]');
+  if(rentalNone)rentalNone.textContent=lang==='ja'?rentalNone.dataset.ja:rentalNone.dataset.en;
+  fillPlans();calcPrice();renderCal();renderDetail();
+}
+document.getElementById('segEn').addEventListener('click',()=>setLang('en'));
+document.getElementById('segJa').addEventListener('click',()=>setLang('ja'));
+
+/* ================= header ================= */
+addEventListener('scroll',()=>{document.getElementById('header').classList.toggle('scrolled',scrollY>10)});
+function goBook(e){
+  if(e)e.preventDefault();
+  document.getElementById('book').scrollIntoView({behavior:'smooth',block:'start'});
 }
 
-/* ===== header shadow ===== */
-addEventListener('scroll',()=>{document.getElementById('header').classList.toggle('scrolled',scrollY>10)});
-
-/* ===== reveal ===== */
-const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+/* ================= reveal ================= */
+const io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}}),{threshold:.1});
 document.querySelectorAll('.rv').forEach(el=>io.observe(el));
 
-/* ===== FAQ ===== */
+/* ================= FAQ ================= */
 function toggleFaq(btn){
-  const it=btn.parentElement, a=it.querySelector('.faq-a'), open=it.classList.contains('open');
+  const it=btn.parentElement,a=it.querySelector('.faq-a'),open=it.classList.contains('open');
   document.querySelectorAll('.faq-item.open').forEach(o=>{o.classList.remove('open');o.querySelector('.faq-a').style.maxHeight=0});
   if(!open){it.classList.add('open');a.style.maxHeight=a.scrollHeight+'px'}
 }
 
-/* ===== booking ===== */
-let mode='book';
+/* ================= booking ================= */
+let mode='book', payChoice='dep';
+const yen=n=>'¥'+n.toLocaleString('en-US');
 function setMode(m){
   mode=m;
   document.getElementById('tabBook').classList.toggle('active',m==='book');
   document.getElementById('tabAsk').classList.toggle('active',m==='ask');
   document.querySelectorAll('.bookOnly').forEach(el=>el.style.display=m==='book'?'':'none');
   document.getElementById('msgRow').style.display=m==='ask'?'':'none';
+  document.getElementById('submitEn').textContent=m==='ask'?'Send Question →':'Request to Book →';
 }
-function askMode(){location.href='#book';setTimeout(()=>setMode('ask'),300)}
-function pickPlan(v){
-  document.getElementById('fPlan').value=v;calcPrice();
-  location.href='#book';setMode('book');
+function setPay(c){
+  payChoice=c;
+  document.getElementById('optDep').classList.toggle('active',c==='dep');
+  document.getElementById('optFull').classList.toggle('active',c==='full');
+  calcPrice();
 }
-const yen=n=>'¥'+n.toLocaleString('en-US');
 function calcPrice(){
   const sel=document.getElementById('fPlan');
+  if(!sel.options.length)return{total:0};
   const price=+sel.options[sel.selectedIndex].dataset.price;
   const pax=+document.getElementById('fPax').value;
   const rental=+document.getElementById('fRental').value*2000;
   const total=price*pax+rental;
   const dep=Math.round(total*0.3/100)*100;
+  const due=payChoice==='full'?total:dep;
   document.getElementById('totAmt').textContent=price?yen(total):'—';
-  document.getElementById('depAmt').textContent=price?yen(dep):'—';
-  document.getElementById('depAmtJa').textContent=price?yen(dep):'—';
-  return{total,dep,plan:sel.options[sel.selectedIndex].text,pax};
+  document.getElementById('dueNow').textContent=price?yen(due):'—';
+  document.getElementById('depOptAmt').textContent=price?yen(dep):'—';
+  document.getElementById('fullOptAmt').textContent=price?yen(total):'—';
+  return{total,dep,due,plan:sel.options[sel.selectedIndex].textContent,pax};
+}
+function pickPlan(v){
+  document.getElementById('fPlan').value=v;calcPrice();setMode('book');goBook();
 }
 function submitForm(e){
   e.preventDefault();
-  const ja=document.body.classList.contains('lang-ja');
+  const ja=isJa();
   if(mode==='ask'){
     document.getElementById('doneTitle').textContent=ja?'ご質問を受け付けました！':'Question sent!';
     document.getElementById('doneMsg').textContent=ja?'通常24時間以内にメールでお返事します。お急ぎの場合はInstagram DMが最速です。':'We usually reply within 24 hours by email. For the fastest answer, DM us on Instagram.';
-    openModal('doneModal');
-    return false;
+    openModal('doneModal');return false;
   }
   const p=calcPrice();
-  if(!p.total){ // charter
+  if(!p.total){
     document.getElementById('doneTitle').textContent=ja?'貸切リクエストを受け付けました！':'Charter request received!';
     document.getElementById('doneMsg').textContent=ja?'内容を確認してお見積りをお送りします。':'We will get back to you with a quote for your group.';
-    openModal('doneModal');
-    return false;
+    openModal('doneModal');return false;
   }
   const date=document.getElementById('fDate').value||'(date TBD)';
+  const full=payChoice==='full';
+  document.getElementById('payModeMsg').textContent=full
+    ?(ja?'全額前払い：当日のお支払いはありません。':'Pay in full now — nothing to pay on the day.')
+    :(ja?'予約金30%を今すぐ決済、残額は当日船上で（現金・カード・QR）。':'Pay a 30% deposit now. The rest is settled on board (cash, card or QR).');
   document.getElementById('paySummary').innerHTML=
     `<div class="row"><span>${p.plan.split('—')[0]}</span><span>${date}</span></div>`+
     `<div class="row"><span>${ja?'人数':'Anglers'} × ${p.pax}</span><span>${yen(p.total)}</span></div>`+
-    `<div class="row total"><span>${ja?'今回のお支払い (30%)':'Due now (30% deposit)'}</span><span>${yen(p.dep)}</span></div>`;
+    (full
+      ?`<div class="row total"><span>${ja?'今回のお支払い（全額）':'Due now (full amount)'}</span><span>${yen(p.total)}</span></div>`
+      :`<div class="row total"><span>${ja?'今回のお支払い（30%）':'Due now (30% deposit)'}</span><span>${yen(p.dep)}</span></div>`
+       +`<div class="row"><span style="color:#8091a3">${ja?'当日のお支払い':'Pay on board'}</span><span style="color:#8091a3">${yen(p.total-p.dep)}</span></div>`);
+  document.getElementById('payBtn').textContent=(ja?'支払う ':'Pay ')+yen(full?p.total:p.dep);
   openModal('payModal');
   return false;
 }
 function payDemo(){
   closeModal('payModal');
-  const ja=document.body.classList.contains('lang-ja');
+  const ja=isJa();
   document.getElementById('doneTitle').textContent=ja?'予約リクエスト完了！':'Booking requested!';
-  document.getElementById('doneMsg').textContent=ja?'船長が空きを確認後、24時間以内に確定メールをお送りします。デポジットは確定まで請求されません。':'The captain will confirm availability and email you within 24 hours. Your deposit is only captured once the trip is confirmed.';
+  document.getElementById('doneMsg').textContent=ja?'船長が空きを確認後、24時間以内に確定メールをお送りします。決済は確定まで請求されません。':'The captain will confirm availability and email you within 24 hours. Your card is only charged once the trip is confirmed.';
   openModal('doneModal');
 }
 function openModal(id){document.getElementById(id).classList.add('show');document.body.style.overflow='hidden'}
 function closeModal(id){document.getElementById(id).classList.remove('show');document.body.style.overflow=''}
 document.querySelectorAll('.modal-bg').forEach(m=>m.addEventListener('click',e=>{if(e.target===m)closeModal(m.id)}));
 
-calcPrice();
+/* ================= availability calendar ================= */
+const AV=window.AVAIL||{};
+const SLOT_LABEL={am:['Morning','午前'],pm:['Afternoon','午後'],night:['Night','夜']};
+const PLAN_JA2EN={'サワラキャスティング':'Sawara Casting','キハダキャスティング':'Yellowfin Tuna Casting','キハダチャーター':'Yellowfin Tuna Charter','イカメタル':'Night Squid (Ika-metal)','アカイカ':'Night Squid (Akaika)','タイラバ・SLJ':'Tairaba & SLJ','タイラバ':'Tairaba','SLJ':'SLJ','落とし込み':'Drop-shot Live Bait','ティップラン':'Tip-Run Squid','ジギング':'Jigging','イサキ':'Isaki','アジ':'Night Aji','2号船チャーター':'Boat 2 Charter','チャーター':'Charter'};
+const PLAN2VALUE=[['サワラ','sawara'],['キハダ','charter'],['イカメタル','squid'],['アカイカ','squid'],['タイラバ','lure-am'],['SLJ','lure-am'],['落とし込み','bait'],['イサキ','bait'],['アジ','bait'],['ティップラン','tiprun'],['ジギング','jig-pm']];
+function planEn(t){
+  if(PLAN_JA2EN[t])return PLAN_JA2EN[t];
+  for(const k in PLAN_JA2EN)if(t.includes(k))return PLAN_JA2EN[k];
+  return t;
+}
+function planValue(t){for(const[k,v]of PLAN2VALUE)if(t.includes(k))return v;return null}
 
-/* min date = today */
+let calBase=new Date();calBase.setDate(1);
+let calOffset=0,selDate=null;
+const MONTHS_EN=['January','February','March','April','May','June','July','August','September','October','November','December'];
+const DOW_EN=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'],DOW_JA=['日','月','火','水','木','金','土'];
+const fmt=d=>d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');
+function renderCal(){
+  const ja=isJa();
+  document.getElementById('calDow').innerHTML=(ja?DOW_JA:DOW_EN).map(d=>`<div>${d}</div>`).join('');
+  const m=new Date(calBase.getFullYear(),calBase.getMonth()+calOffset,1);
+  document.getElementById('calTitle').textContent=ja?`${m.getFullYear()}年${m.getMonth()+1}月`:`${MONTHS_EN[m.getMonth()]} ${m.getFullYear()}`;
+  document.getElementById('calPrev').disabled=calOffset<=0;
+  document.getElementById('calNext').disabled=calOffset>=2;
+  const today=new Date();today.setHours(0,0,0,0);
+  const first=m.getDay(),days=new Date(m.getFullYear(),m.getMonth()+1,0).getDate();
+  let html='';
+  for(let i=0;i<first;i++)html+='<div class="cal-day blank"></div>';
+  for(let d=1;d<=days;d++){
+    const dt=new Date(m.getFullYear(),m.getMonth(),d),key=fmt(dt);
+    const past=dt<today;
+    const info=AV[key];
+    let dots='';
+    if(info)for(const s of['am','pm','night'])if(info[s])dots+=`<i class="dot ${info[s].s}"></i>`;
+    const cls=['cal-day',past?'dis':'',+dt===+today?'today':'',selDate===key?'sel':''].join(' ');
+    html+=`<button type="button" class="${cls}" ${past?'':`onclick="selDay('${key}')"`}>${d}<div class="cal-dots">${dots}</div></button>`;
+  }
+  document.getElementById('calGrid').innerHTML=html;
+  document.getElementById('calAsof').textContent=(isJa()?'出典: 船長の公開カレンダー · 更新 ':'Source: captains’ public calendar · updated ')+(window.AVAIL_ASOF||'');
+}
+function calMove(n){calOffset=Math.min(2,Math.max(0,calOffset+n));renderCal()}
+function selDay(key){selDate=key;renderCal();renderDetail()}
+function renderDetail(){
+  const el=document.getElementById('calDetail');
+  if(!selDate){return}
+  const ja=isJa();
+  const info=AV[selDate]||{};
+  const d=new Date(selDate+'T00:00:00');
+  const dstr=ja?`${d.getMonth()+1}月${d.getDate()}日（${DOW_JA[d.getDay()]}）`:`${DOW_EN[d.getDay()]}, ${MONTHS_EN[d.getMonth()]} ${d.getDate()}`;
+  let html=`<p class="cd-date">${dstr}</p>`;
+  for(const s of['am','pm','night']){
+    const sl=info[s];
+    const label=ja?SLOT_LABEL[s][1]:SLOT_LABEL[s][0];
+    if(sl){
+      const planTxt=ja?sl.t:planEn(sl.t);
+      const stat=sl.s==='open'?(ja?'空きあり':'Seats open'):sl.s==='full'?(ja?'満船':'Full'):(ja?'詳細確認':'See note');
+      const cls=sl.s==='open'?'open':sl.s==='full'?'full':'note';
+      const btn=sl.s==='full'?'':`<button class="sbook" onclick="bookSlot('${selDate}','${(sl.t||'').replace(/'/g,'')}')">${ja?'この便を予約':'Book this trip'}</button>`;
+      html+=`<div class="slot"><span class="stime">${label}</span><span class="splan">${planTxt}</span><span class="sstat ${cls}">${stat}</span>${btn}</div>`;
+    }else{
+      html+=`<div class="slot"><span class="stime">${label}</span><span class="splan" style="color:#8091a3">${ja?'予定なし — リクエスト可':'Nothing scheduled — open to requests'}</span><span class="sstat req">${ja?'リクエスト':'Request'}</span><button class="sbook" onclick="bookSlot('${selDate}','')">${ja?'この日をリクエスト':'Request this date'}</button></div>`;
+    }
+  }
+  el.innerHTML=html;
+}
+function bookSlot(date,planTxt){
+  document.getElementById('fDate').value=date;
+  const v=planTxt?planValue(planTxt):null;
+  if(v)document.getElementById('fPlan').value=v;
+  setMode('book');calcPrice();goBook();
+}
+
+/* ================= init ================= */
+fillPlans();
+let initLang='en';
+try{initLang=localStorage.getItem('tani-lang')||((navigator.language||'').startsWith('ja')?'ja':'en')}catch(e){}
+setLang(initLang);
 document.getElementById('fDate').min=new Date().toISOString().split('T')[0];
 </script>
 
@@ -860,9 +985,8 @@ document.getElementById('fDate').min=new Date().toISOString().split('T')[0];
 {
   "@context":"https://schema.org",
   "@type":"TouristAttraction",
-  "name":"Taninomaru Fishing Charter",
+  "name":"谷野丸 Taninomaru Fishing Charter",
   "description":"Family-run sport fishing charter on the Kii Channel, Wakayama, Japan. Casting, jigging, tairaba and night squid trips. Beginners welcome, gear rental available.",
-  "url":"https://taninomaru.com/",
   "telephone":"+81-80-1496-4938",
   "address":{"@type":"PostalAddress","addressLocality":"Gobo","addressRegion":"Wakayama","addressCountry":"JP","streetAddress":"Minami-Shioya, Shioya-cho (Shioya Port)"},
   "sameAs":["https://www.instagram.com/taninomaru_/","https://www.tiktok.com/@taninomaru123456"]
