@@ -193,6 +193,11 @@ header.scrolled{box-shadow:0 6px 24px rgba(11,58,92,.10)}
 .guest-stepper button{width:46px;height:46px;border:0;background:var(--paper);font-size:1.3rem;font-weight:700;color:var(--indigo);transition:.2s;flex:0 0 46px}
 .guest-stepper button:hover{background:var(--paper-2)}
 .guest-stepper output{flex:1;text-align:center;font-weight:800;font-size:1.05rem}
+.time-choice{display:flex;align-items:center;gap:8px;flex-wrap:wrap;background:#fdf1ef;border:2px dashed rgba(232,80,61,.35);border-radius:12px;padding:10px 14px;margin-top:-2px}
+.time-choice .tc-label{font-size:.7rem;font-weight:800;color:var(--red);letter-spacing:.04em;text-transform:uppercase}
+.tc-btn{border:2px solid var(--border);background:#fff;border-radius:99px;padding:7px 14px;font-size:.76rem;font-weight:800;color:#3f5a70;transition:.2s}
+.tc-btn:hover{border-color:var(--red)}
+.tc-btn.sel{border-color:var(--red);background:var(--red);color:#fff;box-shadow:0 4px 12px rgba(232,80,61,.3)}
 .pay-choice{display:grid;grid-template-columns:1fr 1fr;gap:9px}
 .pay-choice .plan-opt{padding:11px 12px}
 .pay-choice .po-name{font-size:.82rem}
@@ -842,18 +847,27 @@ footer p{font-size:.8rem}
 <script src="assets/availability.js"></script>
 <script>
 /* ================= data ================= */
-/* プラン名はプラン一覧カードと完全に同一の文字列を使うこと */
+/* プラン名はプラン一覧カードと完全に同一の文字列を使うこと。
+   times がある(=複数便)プランは選択時に便を選べる */
 const PLANS={
-  'sawara' :{en:'Sawara Casting',                            ja:'サワラキャスティング',              sub_en:'7:00–12:00 / 12:00–17:00', sub_ja:'午前便・午後便', price:13000, bands:['am','pm']},
+  'sawara' :{en:'Sawara Casting',                            ja:'サワラキャスティング',              sub_en:'morning / afternoon trip', sub_ja:'午前便・午後便', price:13000, bands:['am','pm'],
+             times:[{band:'am',en:'Morning 7:00–12:00',ja:'午前便 7:00–12:00'},{band:'pm',en:'Afternoon 12:00–17:00',ja:'午後便 12:00–17:00'}]},
   'lure-am':{en:'Morning Lure — SLJ · Tairaba · Jigging',    ja:'朝便ルアー（SLJ・タイラバ・ジギング）',sub_en:'~5:00 departure',          sub_ja:'5時ごろ出船',   price:13000, bands:['am']},
   'squid'  :{en:'Night Squid — Akaika (Ika-metal)',          ja:'アカイカ夜焚き（イカメタル）',        sub_en:'~17:00–22:00 · Jun–Sep',   sub_ja:'17〜22時・6〜9月', price:13000, bands:['night']},
   'jig-pm' :{en:'Afternoon Jigging',                         ja:'午後便ジギング',                     sub_en:'12:00–',                   sub_ja:'12時出船',      price:12000, bands:['pm']},
   'tiprun' :{en:'Tip-Run Aori Squid',                        ja:'ティップラン（アオリイカ）',          sub_en:'16:00–21:00 · autumn',     sub_ja:'16〜21時・秋',   price:12000, bands:['night']},
-  'bait'   :{en:'Bait Fishing with the Senior Captain',      ja:'エサ釣り便（2号船）',                sub_en:'morning / night',          sub_ja:'朝便・夜便',     price:13000, bands:['am','night']},
+  'bait'   :{en:'Bait Fishing with the Senior Captain',      ja:'エサ釣り便（2号船）',                sub_en:'morning / night trip',     sub_ja:'朝便・夜便',     price:13000, bands:['am','night'],
+             times:[{band:'am',en:'Morning trip (isaki etc.)',ja:'朝便（イサキ等）'},{band:'night',en:'Night trip (big aji)',ja:'夜便（大アジ）'}]},
   'charter':{en:'Private Charter — ask us',                  ja:'貸切（仕立て）— 要相談',             sub_en:'both boats available',     sub_ja:'二隻対応可',     price:0, bands:['am','pm','night']}
 };
 const DEPOSIT_RATE=0.3;
-let state={plan:'sawara',guests:2,rental:0,pay:'dep',date:null};
+let state={plan:'sawara',guests:2,rental:0,pay:'dep',date:null,band:'am'};
+/* 選択中プランの便情報。timesが無いプランは null */
+function curTime(){
+  const p=PLANS[state.plan];
+  if(!p.times)return null;
+  return p.times.find(t=>t.band===state.band)||p.times[0];
+}
 const yen=n=>'¥'+n.toLocaleString('en-US');
 const isJa=()=>document.body.classList.contains('lang-ja');
 
@@ -868,11 +882,33 @@ function renderPlans(){
     l.innerHTML=`<input type="radio" name="plan" value="${k}" ${state.plan===k?'checked':''}>`+
       `<span class="po-body"><span class="po-name">${isJa()?p.ja:p.en}</span><span class="po-sub">${isJa()?p.sub_ja:p.sub_en}</span></span>`+
       `<span class="po-price">${p.price?yen(p.price):(isJa()?'見積り':'Quote')}</span>`;
-    l.querySelector('input').addEventListener('change',()=>{state.plan=k;renderPlans();updateTotals();renderFormCal()});
+    l.querySelector('input').addEventListener('change',()=>{selectPlan(k)});
     box.appendChild(l);
+    /* 複数便プラン: 選択中カードの直下に便の選択肢を出す */
+    if(state.plan===k&&p.times){
+      if(!p.times.some(t=>t.band===state.band))state.band=p.times[0].band;
+      const tc=document.createElement('div');
+      tc.className='time-choice';
+      tc.innerHTML=`<span class="tc-label">${isJa()?'便を選ぶ:':'Departure:'}</span>`;
+      p.times.forEach(t=>{
+        const b=document.createElement('button');
+        b.type='button';
+        b.className='tc-btn'+(state.band===t.band?' sel':'');
+        b.textContent=isJa()?t.ja:t.en;
+        b.addEventListener('click',()=>{state.band=t.band;renderPlans();renderFormCal()});
+        tc.appendChild(b);
+      });
+      box.appendChild(tc);
+    }
   }
 }
-function pickPlan(k){state.plan=k;renderPlans();updateTotals();renderFormCal();goBook()}
+function selectPlan(k){
+  state.plan=k;
+  const p=PLANS[k];
+  if(p.times&&!p.times.some(t=>t.band===state.band))state.band=p.times[0].band;
+  renderPlans();updateTotals();renderFormCal();
+}
+function pickPlan(k){selectPlan(k);goBook()}
 function goBook(){document.getElementById('book').scrollIntoView({behavior:'smooth'})}
 
 /* ================= guests ================= */
@@ -913,10 +949,12 @@ function updateTotals(){
 /* ================= フォーム内カレンダー（プラン連動） ================= */
 let fOffset=0;
 function classifyDay(planKeyStr,info){
-  /* 選択プランに対する日の状態: [マーク, 色クラス, 選択可否] */
+  /* 選択プラン(と選択中の便)に対する日の状態: [マーク, 色クラス, 選択可否] */
   if(!info)return['・','r',true]; /* 予定なし → リクエスト可 */
   const p=PLANS[planKeyStr];
-  const slots=p.bands.map(b=>info[b]).filter(Boolean);
+  /* 複数便プランは選択中の便の時間帯だけで判定する */
+  const bands=p.times?[(p.times.some(t=>t.band===state.band)?state.band:p.times[0].band)]:p.bands;
+  const slots=bands.map(b=>info[b]).filter(Boolean);
   if(planKeyStr!=='charter'){
     for(const s of slots)if(s.s==='open'&&planKey(s.t)===planKeyStr)return['◯','o',true]; /* 同プラン乗合 */
   }
@@ -974,7 +1012,9 @@ function openPay(){
     return;
   }
   const date=state.date;
-  document.getElementById('mdPlan').textContent=`${ja?c.p.ja:c.p.en} × ${state.guests}${state.rental?` (+${ja?'レンタル':'rental'}×${state.rental})`:''} · ${date}`;
+  const t=curTime();
+  const timeLabel=t?`（${ja?t.ja:t.en}）`:'';
+  document.getElementById('mdPlan').textContent=`${ja?c.p.ja:c.p.en}${timeLabel} × ${state.guests}${state.rental?` (+${ja?'レンタル':'rental'}×${state.rental})`:''} · ${date}`;
   document.getElementById('mdTotal').textContent=yen(c.total);
   document.getElementById('mdBalance').textContent=yen(c.bal);
   document.getElementById('mdBalRow').style.display=state.pay==='full'?'none':'flex';
@@ -1042,19 +1082,23 @@ function renderSlots(){
     if(sl){
       const stat=sl.s==='open'?(ja?'空きあり':'Seats open'):sl.s==='full'?(ja?'満船':'Full'):(ja?'詳細確認':'See note');
       const cls=sl.s==='open'?'open':sl.s==='full'?'full':'note';
-      const btn=sl.s==='full'?'':`<button class="sbook" onclick="calBook('${calSel}','${(sl.t||'').replace(/'/g,'')}')">${ja?'この便を予約':'Book this'}</button>`;
+      const btn=sl.s==='full'?'':`<button class="sbook" onclick="calBook('${calSel}','${(sl.t||'').replace(/'/g,'')}','${s}')">${ja?'この便を予約':'Book this'}</button>`;
       html+=`<div class="slot"><span class="stime">${label}</span><span class="splan">${ja?sl.t:planEn(sl.t)}</span><span class="sstat ${cls}">${stat}</span>${btn}</div>`;
     }else{
-      html+=`<div class="slot"><span class="stime">${label}</span><span class="splan" style="color:#7d94a6">${ja?'予定なし — リクエスト可':'Nothing scheduled — request OK'}</span><span class="sstat req">${ja?'リクエスト':'Request'}</span><button class="sbook" onclick="calBook('${calSel}','')">${ja?'この日で予約':'Pick this date'}</button></div>`;
+      html+=`<div class="slot"><span class="stime">${label}</span><span class="splan" style="color:#7d94a6">${ja?'予定なし — リクエスト可':'Nothing scheduled — request OK'}</span><span class="sstat req">${ja?'リクエスト':'Request'}</span><button class="sbook" onclick="calBook('${calSel}','','${s}')">${ja?'この日で予約':'Pick this date'}</button></div>`;
     }
   }
   document.getElementById('csList').innerHTML=html;
 }
 function calPick(key){calSel=key;renderCal()}
-function calBook(date,planTxt){
+function calBook(date,planTxt,band){
   state.date=date;
   const k=planTxt?planKey(planTxt):null;
-  if(k){state.plan=k;renderPlans();updateTotals()}
+  if(k)state.plan=k;
+  /* 複数便プランなら、選んだ枠の便を反映 */
+  const p=PLANS[state.plan];
+  if(band&&p.times&&p.times.some(t=>t.band===band))state.band=band;
+  renderPlans();updateTotals();
   /* フォームカレンダーの表示月を選択日に合わせる */
   const d=new Date(date+'T00:00:00');
   fOffset=Math.min(2,Math.max(0,(d.getFullYear()-calBase.getFullYear())*12+d.getMonth()-calBase.getMonth()));
