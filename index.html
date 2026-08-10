@@ -109,7 +109,7 @@ header.scrolled{box-shadow:0 6px 24px rgba(11,58,92,.10)}
 
 /* ===== trust strip ===== */
 .trust{display:flex;gap:10px;flex-wrap:wrap;padding:14px 0 26px}
-.trust span{display:inline-flex;align-items:center;gap:7px;background:var(--white);border:1px solid var(--border);border-radius:12px;padding:9px 14px;font-size:.78rem;font-weight:700}
+.trust > span{display:inline-flex;align-items:center;gap:7px;background:var(--white);border:1px solid var(--border);border-radius:12px;padding:9px 14px;font-size:.78rem;font-weight:700}
 .trust .tick{color:var(--green);font-weight:900}
 
 /* ===== section cards ===== */
@@ -120,9 +120,9 @@ header.scrolled{box-shadow:0 6px 24px rgba(11,58,92,.10)}
 
 /* amenities */
 .amen{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
-.amen span{display:flex;align-items:center;gap:9px;font-size:.82rem;font-weight:600;background:var(--paper);border-radius:10px;padding:10px 12px;min-width:0;overflow-wrap:anywhere}
+.amen > span{display:flex;align-items:center;gap:9px;font-size:.82rem;font-weight:600;background:var(--paper);border-radius:10px;padding:10px 12px;min-width:0;overflow-wrap:anywhere}
 .amen .tick{color:var(--green);font-weight:900}
-@media(max-width:640px){.amen{grid-template-columns:repeat(2,minmax(0,1fr))}.amen span{font-size:.76rem;padding:9px 10px}}
+@media(max-width:640px){.amen{grid-template-columns:repeat(2,minmax(0,1fr))}.amen > span{font-size:.76rem;padding:9px 10px}}
 .caps{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:16px}
 .cap-card{display:flex;gap:14px;background:var(--paper);border-radius:14px;padding:16px;min-width:0}
 .cap-card img{width:64px;height:64px;border-radius:50%;object-fit:cover;flex:0 0 64px}
@@ -255,7 +255,7 @@ header.scrolled{box-shadow:0 6px 24px rgba(11,58,92,.10)}
 .rev-score .stars{display:block;margin:6px 0 3px}
 .rev-score small{font-size:.7rem;color:#7d94a6;font-weight:600}
 .rev-points{flex:1;min-width:240px;display:flex;flex-direction:column;gap:9px}
-.rev-points span{font-size:.84rem;font-weight:600;display:flex;gap:9px;align-items:flex-start}
+.rev-points > span{font-size:.84rem;font-weight:600;display:flex;gap:9px;align-items:flex-start}
 .rev-points .tick{color:var(--green);font-weight:900}
 
 /* faq */
@@ -351,6 +351,11 @@ footer p{font-size:.8rem}
 .slot .sstat.note{background:#fdf3e0;color:#a8791d}
 .slot .sbook{background:var(--red);color:#fff;border:none;border-radius:8px;padding:6px 12px;font-size:.68rem;font-weight:800}
 .cal-asof{font-size:.66rem;color:#7d94a6;margin-top:8px}
+
+/* i18n の保険: レイアウト用の子孫セレクタが .en/.ja に勝って
+   両言語が並んで出る事故を防ぐ（詳細度(0,2,1)で確実に勝たせる） */
+body:not(.lang-ja) .ja, body:not(.lang-ja) .ja.block{display:none}
+body.lang-ja .en, body.lang-ja .en.block{display:none}
 
 .rv{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
 .rv.in{opacity:1;transform:none}
